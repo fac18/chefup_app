@@ -36,3 +36,43 @@
     transform: rotate(360deg);
   }
 }
+
+/* link class */
+a {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+}
+
+/* paragraph */
+p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  /* or 26px */
+  letter-spacing: 0.05em;
+}
+
+/* Header font */
+h1 {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+/* Sub-header-info */
+h2 {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+}
