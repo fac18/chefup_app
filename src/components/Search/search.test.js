@@ -1,7 +1,7 @@
 import React from "react";
 import { create } from "react-test-renderer";
 
-const Search = (props) => {
+const SearchTest = (props) => {
     return (
         <div>
             <p>Search for a lesson</p>
@@ -11,6 +11,6 @@ const Search = (props) => {
 };
 
 test("Footer matches the snapshot", () => {
-    const search = create(<Search />);
+    const search = create(<SearchTest />);
     expect(search.toJSON()).toMatchSnapshot();
 });

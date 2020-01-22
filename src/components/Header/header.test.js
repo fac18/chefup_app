@@ -1,11 +1,11 @@
 import React from "react";
 import { create } from "react-test-renderer";
 
-const Header = (props) => {
+const HeaderTest = (props) => {
     return <p>Header to be inserted</p>;
 };
 
 test("Footer matches the snapshot", () => {
-    const header = create(<Header />);
+    const header = create(<HeaderTest />);
     expect(header.toJSON()).toMatchSnapshot();
 });

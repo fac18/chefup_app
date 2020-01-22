@@ -1,7 +1,7 @@
 import React from "react";
 import { create } from "react-test-renderer";
 
-const RecipeCard = (props) => {
+const RecipeCardTest = (props) => {
     return (
         <div>
             <p>Details: enter here</p>
@@ -11,6 +11,6 @@ const RecipeCard = (props) => {
 };
 
 test("Footer matches the snapshot", () => {
-    const recipecard = create(<RecipeCard />);
+    const recipecard = create(<RecipeCardTest />);
     expect(recipecard.toJSON()).toMatchSnapshot();
 });
