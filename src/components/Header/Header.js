@@ -1,9 +1,12 @@
-import { Logo } from '../../icons/logo_text-white.svg';
-
+import React from "react";
+import "./header.css";
+import Logo from "../Logo/Logo";
 const Header = () => {
-  <div className="header">
-    <Logo />
-  </div>;
+  return (
+    <div className="header">
+      <Logo />
+    </div>
+  );
 };
 
 export default Header;
