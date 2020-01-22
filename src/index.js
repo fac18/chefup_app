@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "typeface-roboto";
 import "typeface-roboto-mono";
+import "typeface-source-sans-pro";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

@@ -4,7 +4,8 @@ button {
 }
 form {
   display: flex;
-  align-content: center;
+  justify-content: center;
+  margin: var(--space-m);
 }
 input {
   border-color: var(--grey);
@@ -14,6 +15,6 @@ input {
   font-size: 16px;
   padding: var(--space-xs);
   height: 5vh;
-  margin: 10px 0;
+  margin: var(--space-s);
   background-color: var(--white);
 }
