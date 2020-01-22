@@ -1,3 +1,19 @@
 button {
-  background-color: var(--primary-app-colour)
+  background-color: var(--primary-app-colour);
+  width: var(--space-xxl);
+}
+form {
+  display: flex;
+  align-content: center;
+}
+input {
+  border-color: var(--grey);
+  border-width: thin;
+  width: 40vmax;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  padding: var(--space-xs);
+  height: 5vh;
+  margin: 10px 0;
+  background-color: var(--white);
 }

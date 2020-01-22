@@ -3,10 +3,9 @@ import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
 import "./search.css";
 const SearchBar = () => {
   const [searchInput, setSearchInput] = React.useState(undefined);
-  const handleChange = event => {
-    event.preventDefault();
-    setSearchInput(event.value);
-  };
+  // we will need to have an extra function here to do a get request to our database
+  // so that we can filter the search results as the user is typing
+
   return (
     <form>
       <input
@@ -15,7 +14,8 @@ const SearchBar = () => {
         name="search"
         required
         value={searchInput}
-        onChange={handleChange}
+        placeholder="Search by your favourite cuisine, ingredients or by your current location..."
+        onChange={event => setSearchInput(event.target.value)}
       ></input>
       <button value="search">
         <SearchIcon />
