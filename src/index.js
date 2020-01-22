@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as router, Router } from 'react-router-dom'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import "./index.css";
 import App from "./App";
-import Header from './components/Header/Header'
+import createRecipe from './pages/createRecipe';
+import displayRecipe from './pages/displayRecipe';
 import * as serviceWorker from "./serviceWorker";
 import "typeface-roboto";
 import "typeface-roboto-mono";
