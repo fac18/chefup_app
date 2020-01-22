@@ -1,0 +1,8 @@
+.header {
+  background-color: var(--secondary-app-colour);
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-s);
+}
