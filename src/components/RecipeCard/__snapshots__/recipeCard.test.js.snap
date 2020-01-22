@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer matches the snapshot 1`] = `
+<div>
+  <p>
+    Details: enter here
+  </p>
+  <p>
+    My recipe details
+  </p>
+</div>
+`;
