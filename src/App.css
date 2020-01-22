@@ -85,4 +85,10 @@ h2 {
   --white: #f2f4f3;
   --tertiary-app-colour: #f4d143;
   --quaternary-app-colour: #d0ef84;
+  --space-xs: 0.382rem;
+  --space-s: 0.618rem;
+  --space-m: 1rem;
+  --space-l: 1.618rem;
+  --space-xl: 2.618rem;
+  --space-xxl: 4.236rem;
 }

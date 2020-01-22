@@ -16,10 +16,10 @@ const Logo = () => {
           fill="white"
           // xml:space="preserve"
           // style="white-space: pre"
-          font-family="Roboto Mono"
-          font-size="29"
-          font-weight="bold"
-          letter-spacing="0em"
+          fontFamily="Roboto Mono"
+          fontSize="29"
+          fontWeight="bold"
+          letterSpacing="0em"
         >
           <tspan x="0" y="30.2644">
             chefUp
