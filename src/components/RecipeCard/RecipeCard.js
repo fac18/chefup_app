@@ -39,7 +39,6 @@ const RecipeCard = () => {
           {/* <p className="class_first_line" value={lessonData.title}></p> */}
 
           <p className="class_first_line" value={lessonData.title}></p>
-
         </div>
       </article>
     </section>

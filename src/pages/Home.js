@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import HomePageHeader from "../components/HomePageHeader/HomePageHeader";
 import Footer from "../components/Footer/Footer";
 import Search from "../components/Search/Search";
 import RecipeCard from "../components/RecipeCard/RecipeCard";
@@ -9,10 +9,9 @@ const Home = () => {
   getRecipesData();
   return (
     <div>
-      <Header />
+      <HomePageHeader />
       <Search />
       <RecipeCard />
-      <Footer />
     </div>
   );
 };
