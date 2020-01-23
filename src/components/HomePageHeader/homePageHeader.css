@@ -1,0 +1,15 @@
+.homePageHeader {
+    background-color: var(--primary-app-colour);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    color: var(--white);
+}
+
+ul, li > a {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+}
