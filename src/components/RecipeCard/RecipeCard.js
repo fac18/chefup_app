@@ -1,6 +1,8 @@
 import React from "react";
+import { getRecipesData } from "../../utils/getRecipesData";
 
 const RecipeCard = () => {
+  getRecipesData();
   return (
     <div>
       <section className="class_image">

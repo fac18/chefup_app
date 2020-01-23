@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Search from "../components/Search/Search";
 import RecipeCard from "../components/RecipeCard/RecipeCard";
-import { getRecipesData } from "../utils/getRecipeData";
+import { getRecipesData } from "../utils/getRecipesData";
 
 const Home = () => {
   getRecipesData();
