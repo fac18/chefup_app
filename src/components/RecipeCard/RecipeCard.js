@@ -3,30 +3,30 @@ import React from ('react');
 
 const RecipeCard = () =>{
   return (
-    <div>
-      <section className="class_image">
+    <article>
+      <header className="class_image">
         <img src="" alt="class image" />
-      </section>
-      <section className="class_details">
-        <section className="class_first_line">
+      </header>
+      <footer className="class_details">
+        <div className="class_first_line">
           <img src="" alt="chef_image" />
-          <section className="name_location_rating_container">
-            <section class="name_location_container">
+          <div className="name_location_rating_container">
+            <div class="name_location_container">
               <span className="chef_name"></span>
               <span className="class_location"></span>
-            </section>
+            </div>
             <span className="class_rating"></span>
-          </section>
+          </div>
           <span className="class_price"> </span>
-        </section>
-        <section className="class_second_line">
+        </div>
+        <div className="class_second_line">
           <span className="class_name"></span>
-        </section>
-        <section className="class_third_line">
+        </div>
+        <div className="class_third_line">
           <a className="class_link" href="url">learn more</a>
-        </section>
-      </section>
-    </div>
+        </div>
+      </footer>
+    </article>
   )
 
 }
