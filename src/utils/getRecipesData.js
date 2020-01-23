@@ -10,13 +10,11 @@ const checkResponse = response => {
 
 export const getRecipesData = searchInput => {
   // searchInput will come from the search bar and be used to filter the returned values
-  console.log({ token });
   return fetch(
     `https://api.airtable.com/v0/appnneO9UdlcBo0C3/Table%201?api_key=${token}`
   )
     .then(checkResponse)
     .then(data => {
-      console.log(data);
       return data;
     })
     .catch(err => {
