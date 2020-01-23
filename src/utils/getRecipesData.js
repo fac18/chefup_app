@@ -14,9 +14,6 @@ export const getRecipesData = searchInput => {
     `https://api.airtable.com/v0/appnneO9UdlcBo0C3/Table%201?api_key=${token}`
   )
     .then(checkResponse)
-    .then(data => {
-      return data;
-    })
     .catch(err => {
       throw new Error(`fetch getTeamData failed ${err}`);
     });

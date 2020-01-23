@@ -6,6 +6,7 @@ import createRecipe from './pages/createRecipe';
 import displayRecipe from './pages/displayRecipe';
 import profile from './pages/profile'
 import Home from './pages/Home'
+import aboutUs from './pages/aboutUs'
 import "typeface-roboto";
 import "typeface-roboto-mono";
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/teach' component={createRecipe} />
           <Route path='/displayRecipe' component={displayRecipe} />
           <Route path='/profile' component={profile} />
+          <Route path='/aboutUs' component={aboutUs} />
   </Router>
   );
 }
