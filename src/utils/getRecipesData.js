@@ -1,5 +1,4 @@
 const token = process.env.REACT_APP_TOKEN;
-
 const checkResponse = response => {
   if (response.status !== 200) {
     console.log(`Error with the request! ${response.status} `);
@@ -7,7 +6,6 @@ const checkResponse = response => {
   }
   return response.json();
 };
-
 export const getRecipesData = searchInput => {
   // searchInput will come from the search bar and be used to filter the returned values
   return fetch(

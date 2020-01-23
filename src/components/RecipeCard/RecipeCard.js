@@ -1,7 +1,6 @@
 import React from "react";
 import "./recipeCard.css";
 import { getRecipesData } from "../../utils/getRecipesData";
-
 const RecipeCard = () => {
   const [lessonData, setLessonData] = React.useState(null);
 
@@ -23,19 +22,23 @@ const RecipeCard = () => {
   //   });
   // });
   // console.log(lessonData.title);
-  // if (lessonData === null) {
-  //   return (
-  //     <div>
-  //       <p>Loading...</p>
-  //     </div>
-  //   );
-  // }
+  if (lessonData === null) {
+    return (
+      <div>
+        <p>Loading...</p>
+      </div>
+    );
+  }
+
 
   return (
     <section className="recipes">
       <article className="recipeCard">
         <div className="class_details">
+
           {/* <p className="class_first_line" value={lessonData.title}></p> */}
+
+          <p className="class_first_line" value={lessonData.title}></p>
         </div>
       </article>
     </section>
