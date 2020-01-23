@@ -38,12 +38,13 @@ const RecipeCard = () => {
       {lessonData
         ? lessonData.map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
-              <img
-                className="recipe_image"
-                src={lesson.image_url}
-                alt={lesson.title}
-              />
-              <div className="class_details">
+              <div className="recipes_lesson-details">
+                <img
+                  className="recipe_image"
+                  src={lesson.image_url}
+                  alt={lesson.title}
+                />
+
                 <h1>{lesson.title}</h1>
                 <h2>{lesson.teacher}</h2>
                 <p>{lesson.description}</p>

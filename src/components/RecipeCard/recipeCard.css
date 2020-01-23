@@ -1,12 +1,24 @@
 section {
   max-width: 100vh;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
-.recipes_recipeCard {
+
+article {
+  max-width: 80vh;
+  display: flex;
+  padding: var(--space-m);
+  margin: var(--space-m);
+}
+.recipes_lesson-details {
   border-radius: 10px;
   border-color: var(--grey);
-  border-width: 0.5px;
+  border-width: 10px;
+  max-width: 80vh;
+  background-color: var(--white);
+  padding: var(--space-m);
+  margin: var(--space-m);
 }
 
 .recipe_image {
