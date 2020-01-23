@@ -3,6 +3,7 @@ import "./recipeCard.css";
 import { getRecipesData } from "../../utils/getRecipesData";
 const RecipeCard = () => {
   const [lessonData, setLessonData] = React.useState(null);
+
   React.useEffect(()=> {
     getRecipesData().then(data => setLessonData(data));
   }, []);
@@ -28,11 +29,17 @@ const RecipeCard = () => {
       </div>
     );
   }
+
+
   return (
     <section className="recipes">
       <article className="recipeCard">
         <div className="class_details">
+
           {/* <p className="class_first_line" value={lessonData.title}></p> */}
+
+          <p className="class_first_line" value={lessonData.title}></p>
+
         </div>
       </article>
     </section>
@@ -58,4 +65,5 @@ const RecipeCard = () => {
 //     </a>
 //   </section>
 // </section>
+
 export default RecipeCard;
