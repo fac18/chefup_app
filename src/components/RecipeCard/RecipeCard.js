@@ -1,8 +1,27 @@
 import React from "react";
+import './recipeCard.css';
 import { getRecipesData } from "../../utils/getRecipesData";
 
 const RecipeCard = () => {
-  getRecipesData();
+  const [lessonData, setLessonData] = React.useState(null);
+
+  getRecipesData().then(data => {
+  //    data.map(lesson => {console.log(lesson.id);
+  //     return(lesson);
+  //   });
+  // }
+    console.log('typeof data ', typeof(data))
+    data.records.map(lesson => console.log('lesson id ',lesson.id))
+  });
+
+  if (lessonData === null) {
+    return (
+      <div>
+        <p>Loading...</p>
+      </div>
+    )
+  }
+  
   return (
     <div>
       <section className="class_image">
