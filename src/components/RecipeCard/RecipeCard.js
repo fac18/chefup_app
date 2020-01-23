@@ -1,7 +1,8 @@
-import React from ('react');
+import React from "react";
+import { getRecipesData } from "../../utils/getRecipesData";
 
-
-const RecipeCard = () =>{
+const RecipeCard = () => {
+  getRecipesData();
   return (
     <div>
       <section className="class_image">
@@ -23,12 +24,13 @@ const RecipeCard = () =>{
           <span className="class_name"></span>
         </section>
         <section className="class_third_line">
-          <a className="class_link" href="url">learn more</a>
+          <a className="class_link" href="url">
+            learn more
+          </a>
         </section>
       </section>
     </div>
-  )
-
-}
+  );
+};
 
 export default RecipeCard;
