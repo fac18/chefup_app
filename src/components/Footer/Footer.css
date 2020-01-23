@@ -1,0 +1,7 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-app-colour);
+    list-style: none;
+    padding: 1rem 0;
+}
