@@ -1,7 +1,8 @@
 import React from "react";
 import "./header.css";
 // import Logo from "../Logo/Logo";
-import { ReactComponent as Logo } from "../../icons/logoTextWhite.svg";
+import { ReactComponent as Logo } from "../../Icons/logoTextWhite.svg";
+
 const Header = () => {
   return (
     <div className="header">
