@@ -1,0 +1,17 @@
+section {
+  max-width: 100vh;
+  display: flex;
+  justify-content: space-around;
+}
+.recipes_recipeCard {
+  border-radius: 10px;
+  border-color: var(--grey);
+  border-width: 0.5px;
+}
+
+.recipe_image {
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
+}

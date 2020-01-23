@@ -13,13 +13,14 @@ const RecipeCard = () => {
           teacher: lesson.fields.teacher,
           time: lesson.fields.time,
           duration: lesson.fields.lesson_duration,
-          image: lesson.fields.main_recipe_image[0].url
+          image_url: lesson.fields.main_recipe_image[0].url,
+          ingredients: lesson.fields.ingredients,
+          id: lesson.id
         }))
       )
     );
   }, []);
 
- 
   if (lessonData === null) {
     return (
       <div>
@@ -36,10 +37,19 @@ const RecipeCard = () => {
     <section className="recipes">
       {lessonData
         ? lessonData.map(lesson => (
-            <article className="recipeCard">
-              <img src = {lesson.image} />
+            <article data-testid={lesson.id} className="recipes_recipeCard">
+              <img
+                className="recipe_image"
+                src={lesson.image_url}
+                alt={lesson.title}
+              />
               <div className="class_details">
-                <h2 className="class_first_line">{lesson.title}</h2>
+                <h1>{lesson.title}</h1>
+                <h2>{lesson.teacher}</h2>
+                <p>{lesson.description}</p>
+                <p>{lesson.time}</p>
+                <p>{lesson.duration}</p>
+                <p>{lesson.ingredients}</p>
               </div>
             </article>
           ))
@@ -47,7 +57,5 @@ const RecipeCard = () => {
     </section>
   );
 };
-
-
 
 export default RecipeCard;

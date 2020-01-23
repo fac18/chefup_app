@@ -1,16 +1,8 @@
 import React from "react";
-import { create } from "react-test-renderer";
+import { render } from "@testing-library/react";
+import RecipeCard from "./RecipeCard";
 
-const RecipeCard = (props) => {
-    return (
-        <div>
-            <p>Details: enter here</p>
-            <p>My recipe details</p>
-        </div>
-        );
-};
-
-test("Footer matches the snapshot", () => {
-    const recipecard = create(<RecipeCard />);
-    expect(recipecard.toJSON()).toMatchSnapshot();
+test("RecipeCard component renders correctly", () => {
+  const { findByTestId } = render(<RecipeCard />);
+  findByTestId("rec8oKeNrianbq65v");
 });
