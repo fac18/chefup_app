@@ -17,7 +17,9 @@ const RecipeCard = () => {
           duration: lesson.fields.lesson_duration,
           image_url: lesson.fields.main_recipe_image[0].url,
           ingredients: lesson.fields.ingredients,
-          id: lesson.id
+          id: lesson.id,
+          price: lesson.fields.price,
+          location: lesson.fields.location
         }))
       )
     );
@@ -48,12 +50,14 @@ const RecipeCard = () => {
                   alt={lesson.title}
                 ></ImageContainer>
 
+
                 <h1>{lesson.title}</h1>
-                <h2>{lesson.teacher}</h2>
-                <p>{lesson.description}</p>
+                <h2>{lesson.teacher}, {lesson.location}, £{lesson.price}</h2>
+                {/* <p>{lesson.description}</p>
                 <p>{lesson.time}</p>
                 <p>{lesson.duration}</p>
-                <p>{lesson.ingredients}</p>
+                <p>{lesson.ingredients}</p> */}
+                <a href="">LEARN MORE</a>
               </div>
             </article>
           ))
