@@ -1,6 +1,16 @@
 import React from "react";
 import "./recipeCard.css";
 import { getRecipesData } from "../../utils/getRecipesData";
+import styled from "styled-components";
+
+const ImageContainer = styled.div`
+  background-image: url(${props => props.imageUrl});
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  width: 100%;
+`;
+
 const RecipeCard = () => {
   const [lessonData, setLessonData] = React.useState(null);
 
@@ -33,17 +43,18 @@ const RecipeCard = () => {
   //   // console.log('lesson description ', element.fields.lesson_description)
   //   console.log('lesson description', element.lesson_description);
   // });
+  //{" <div className="recipe_image-container">"}
+  //{"</div> "}
   return (
     <section className="recipes">
       {lessonData
         ? lessonData.map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
-                <img
-                  className="recipe_image"
-                  src={lesson.image_url}
+                <ImageContainer
+                  imageUrl={lesson.image_url}
                   alt={lesson.title}
-                />
+                ></ImageContainer>
 
                 <h1>{lesson.title}</h1>
                 <h2>{lesson.teacher}</h2>

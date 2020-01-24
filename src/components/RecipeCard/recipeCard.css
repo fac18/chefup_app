@@ -22,8 +22,12 @@ article {
   margin: var(--space-s);
 }
 
+.recipe_image-container {
+  display: flex;
+  align-content: center;
+}
+
 .recipe_image {
-  align-self: center;
   height: auto;
   max-height: 250px;
   width: auto;
