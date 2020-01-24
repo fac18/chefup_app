@@ -12,7 +12,6 @@ const RecipeCard = ({lessonData}) => {
       </div>
     );
   }
-
   // lessonData.forEach(element => {
   //   // console.log('lesson description ', element.fields.lesson_description)
   //   console.log('lesson description', element.lesson_description);
@@ -23,6 +22,7 @@ const RecipeCard = ({lessonData}) => {
     <section className="recipes">
       {lessonData
         ? lessonData.map(lesson => (
+          
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
                 <ImageContainer
@@ -37,7 +37,7 @@ const RecipeCard = ({lessonData}) => {
                 <p>{lesson.time}</p>
                 <p>{lesson.duration}</p>
                 <p>{lesson.ingredients}</p> */}
-                <a href="">LEARN MORE</a>
+                <a href={lesson.lessonUrl}>LEARN MORE</a>
               </div>
             </article>
           ))
