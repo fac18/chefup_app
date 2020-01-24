@@ -4,12 +4,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 0.2rem 0;
     color: var(--white);
+}
+
+.nav ul {
+    
 }
 
 ul, li > a {
     list-style-type: none;
     text-decoration: none;
     color: var(--white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
