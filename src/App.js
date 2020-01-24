@@ -32,6 +32,7 @@ function App() {
           image_url: lesson.fields.main_recipe_image[0].url,
           ingredients: lesson.fields.ingredients,
           id: lesson.id,
+          lessonUrl: `/DisplayLesson/${lesson.id}`,
           price: lesson.fields.price,
           location: lesson.fields.location
         }))

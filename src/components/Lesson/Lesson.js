@@ -6,7 +6,8 @@ import './lesson.css';
 <p>{lesson.time}</p>
 <p>{lesson.duration}</p>
 <p>{lesson.ingredients}</p> */}
-const Lesson = () => {
+const Lesson = ({result}) => {
+  console.log({result});
   return (
     
     <div className="image_container">
