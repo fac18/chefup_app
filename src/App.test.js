@@ -8,7 +8,7 @@ import '@testing-library/jest-dom/extend-expect'
 test('full app rendering/navigating', () => {
   const history = createMemoryHistory()
   const { container, getByText } = render(
-    <Router history={withRouter(history)}>
+    <Router history={history}>
       <App />
     </Router>
   )
@@ -17,5 +17,5 @@ test('full app rendering/navigating', () => {
   fireEvent.click(getByText(/about/i))
 
   // check that the content changed to the new page
-  expect(container.innerHTML).toMatch('You are on the about page')
+  expect(container.textContent).toMatch(/about/i)
 })
