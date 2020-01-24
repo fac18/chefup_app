@@ -1,6 +1,8 @@
 import React from "react";
 import "./recipeCard.css";
 import { getRecipesData } from "../../utils/getRecipesData";
+import { ImageContainer } from "./css-components";
+
 const RecipeCard = () => {
   const [lessonData, setLessonData] = React.useState(null);
 
@@ -15,7 +17,9 @@ const RecipeCard = () => {
           duration: lesson.fields.lesson_duration,
           image_url: lesson.fields.main_recipe_image[0].url,
           ingredients: lesson.fields.ingredients,
-          id: lesson.id
+          id: lesson.id,
+          price: lesson.fields.price,
+          location: lesson.fields.location
         }))
       )
     );
@@ -33,24 +37,27 @@ const RecipeCard = () => {
   //   // console.log('lesson description ', element.fields.lesson_description)
   //   console.log('lesson description', element.lesson_description);
   // });
+  //{" <div className="recipe_image-container">"}
+  //{"</div> "}
   return (
     <section className="recipes">
       {lessonData
         ? lessonData.map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
-                <img
-                  className="recipe_image"
-                  src={lesson.image_url}
+                <ImageContainer
+                  imageUrl={lesson.image_url}
                   alt={lesson.title}
-                />
+                ></ImageContainer>
+
 
                 <h1>{lesson.title}</h1>
-                <h2>{lesson.teacher}</h2>
-                <p>{lesson.description}</p>
+                <h2>{lesson.teacher}, {lesson.location}, £{lesson.price}</h2>
+                {/* <p>{lesson.description}</p>
                 <p>{lesson.time}</p>
                 <p>{lesson.duration}</p>
-                <p>{lesson.ingredients}</p>
+                <p>{lesson.ingredients}</p> */}
+                <a href="">LEARN MORE</a>
               </div>
             </article>
           ))
