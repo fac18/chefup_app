@@ -14,7 +14,7 @@ const SearchBar = () => {
         name="search"
         required
         value={searchInput}
-        placeholder="Search by your favourite cuisine, ingredients or by your current location..."
+        placeholder="Search by your favourite cuisine, ingredients or current location..."
         onChange={event => setSearchInput(event.target.value)}
       ></input>
       <button value="search">

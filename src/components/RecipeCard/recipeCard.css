@@ -6,24 +6,26 @@ section {
 }
 
 article {
-  max-width: 80vh;
+  max-width: 80vw;
   display: flex;
   padding: var(--space-m);
-  margin: var(--space-m);
+  margin: var(--space-s);
 }
 .recipes_lesson-details {
   border-radius: 10px;
   border-color: var(--grey);
   border-width: 10px;
-  max-width: 80vh;
+  width: 80vw;
+  max-width: 300px;
   background-color: var(--white);
   padding: var(--space-m);
-  margin: var(--space-m);
+  margin: var(--space-s);
 }
 
 .recipe_image {
+  align-self: center;
   height: auto;
   max-height: 250px;
   width: auto;
-  max-width: 250px;
+  max-width: 280px;
 }
