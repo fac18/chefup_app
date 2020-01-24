@@ -19,7 +19,6 @@ function App() {
       <Route path="/profile" component={profile} />
       <Route path="/aboutUs" component={aboutUs} />
     </Router>
-=======
       <Switch>
           <Route exact path='/' component={withRouter(Home)} />
           <Route path='/teach' component={withRouter(createRecipe)} />
