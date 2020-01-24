@@ -1,14 +1,14 @@
 section {
-  max-width: 100vh;
+  max-width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-flow: row wrap;
 }
 
 article {
   max-width: 80vw;
   display: flex;
-  padding: var(--space-m);
+  padding: var(--space-s);
   margin: var(--space-s);
 }
 .recipes_lesson-details {

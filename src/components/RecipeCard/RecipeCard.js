@@ -1,15 +1,7 @@
 import React from "react";
 import "./recipeCard.css";
 import { getRecipesData } from "../../utils/getRecipesData";
-import styled from "styled-components";
-
-const ImageContainer = styled.div`
-  background-image: url(${props => props.imageUrl});
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 100%;
-`;
+import { ImageContainer } from "./css-components";
 
 const RecipeCard = () => {
   const [lessonData, setLessonData] = React.useState(null);
