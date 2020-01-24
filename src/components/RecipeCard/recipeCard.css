@@ -1,0 +1,29 @@
+section {
+  max-width: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+article {
+  max-width: 80vh;
+  display: flex;
+  padding: var(--space-m);
+  margin: var(--space-m);
+}
+.recipes_lesson-details {
+  border-radius: 10px;
+  border-color: var(--grey);
+  border-width: 10px;
+  max-width: 80vh;
+  background-color: var(--white);
+  padding: var(--space-m);
+  margin: var(--space-m);
+}
+
+.recipe_image {
+  height: auto;
+  max-height: 250px;
+  width: auto;
+  max-width: 250px;
+}
