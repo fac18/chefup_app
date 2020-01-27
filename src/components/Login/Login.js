@@ -1,16 +1,23 @@
 import React from 'react';
 import './login.css';
-import Header from '../Header/Header';
 
 const Login = () => {
     const [login, setLogin] = React.useState({
         username: "",
         password: ""
     });
+
+    // let correctLogin = {
+    //     username: 'login',
+    //     password: 'login'
+    // }
     
-    if(login) {
-        console.log(login);
-    }
+    // if(login === correctLogin) {
+    //     console.log(login);
+    // }
+
+    // let changeHandler = 
+    //     let name = 
 
     return (
         <div>
@@ -20,7 +27,7 @@ const Login = () => {
                     id="username"
                     name="username"
                     required
-                    value={login.username}
+                    defaultValue={login.username}
                     placeholder="Enter your username here"
                 ></input>
                 <input
@@ -28,10 +35,10 @@ const Login = () => {
                     id="password"
                     name="password"
                     required
-                    value={login.password}
+                    defaultValue={login.password}
                     placeholder="Enter your password here"
                 ></input>
-                <input value="submit" onChange={event => setLogin(event.target.value)} />
+                <input type="submit" value="Submit" onChange={event => setLogin(event.target.value)} />
             </form>
         </div>
     )
