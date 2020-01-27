@@ -3,8 +3,7 @@ import {
   Route,
   Link,
   BrowserRouter as Router,
-  Switch,
-  withRouter
+  Switch
 } from "react-router-dom";
 import "./index.css";
 import "./App.css";
@@ -13,9 +12,11 @@ import DisplayLesson from "./pages/DisplayLesson";
 import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
+import Login from "./pages/LoginPage";
 import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
+import SignUpPage from "./pages/SignUpPage";
 
 function App() {
   const [lessonData, setLessonData] = React.useState(null);
@@ -43,10 +44,12 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
-        <Route path="/teach" component={withRouter(CreateLesson)} />
+        <Route path="/teach" render={() => (<CreateLesson />)} />
         <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
-        <Route path="/ProfilePage" component={withRouter(ProfilePage)} />
-        <Route path="/AboutPage" component={withRouter(AboutPage)} />
+        <Route path="/ProfilePage" render={() => (<ProfilePage />)} />
+        <Route path="/AboutPage" render={() => (<AboutPage />)} />
+        <Route path="/Login" render={() => (<Login />)} />
+        <Route path='/SignUp' render={() => (<SignUpPage />)} />
       </Switch>
     </Router>
   );
