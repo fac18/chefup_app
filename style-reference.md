@@ -1,7 +1,7 @@
 ### Design Principles
 
 **Warm**: We want people to visit ChefUp and feel a sense of community and be excited to start cooking home made meals <br />
-**Visual**: there will be lots of photos of food and profile photos to encourage trust and enthuse people to use the app <br />
+**Visual**: there will be lots of photos of food and ProfilePage photos to encourage trust and enthuse people to use the app <br />
 **Consistency**: this style guide aims to show how we wil provide consistency through out the app, with colour, sizing, text and more <br />
 **Don't reinvent the wheel** - we want to take inspiration from other products and how for example they display a map - people who regularly use these products are familiar with a certain functionality and we want to emulate that <br />
 

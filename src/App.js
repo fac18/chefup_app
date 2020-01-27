@@ -8,11 +8,11 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import "./App.css";
-import createRecipe from "./pages/createRecipe";
+import CreateLesson from "./pages/CreateLesson";
 import DisplayLesson from "./pages/DisplayLesson";
-import profile from "./pages/profile";
+import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
-import aboutUs from "./pages/aboutUs";
+import AboutPage from "./pages/AboutPage";
 import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
@@ -43,10 +43,10 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
-        <Route path="/teach" component={withRouter(createRecipe)} />
+        <Route path="/teach" component={withRouter(CreateLesson)} />
         <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
-        <Route path="/profile" component={withRouter(profile)} />
-        <Route path="/aboutUs" component={withRouter(aboutUs)} />
+        <Route path="/ProfilePage" component={withRouter(ProfilePage)} />
+        <Route path="/AboutPage" component={withRouter(AboutPage)} />
       </Switch>
     </Router>
   );

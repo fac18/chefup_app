@@ -10,7 +10,7 @@ const HomePageHeader = () => {
             <nav>
                 <ul className='nav'>
                     <li>
-                        <Link to="/aboutUs">About Us</Link>
+                        <Link to="/AboutPage">About Us</Link>
                     </li>
                     <li>
                         <Link to="/login">Login</Link>
