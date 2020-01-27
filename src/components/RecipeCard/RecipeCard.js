@@ -1,26 +1,16 @@
 import React from "react";
 import "./recipeCard.css";
-
+import { filterByInput } from "../../utils/filterByInput";
 import { ImageContainer } from "./css-components";
 
-const RecipeCard = ({ lessonData }) => {
+const RecipeCard = ({ searchInput, lessonData }) => {
   if (lessonData === null) {
-    return (
-      <div>
-        <p>Loading...</p>
-      </div>
-    );
+    return null;
   }
-  // lessonData.forEach(element => {
-  //   // console.log('lesson description ', element.fields.lesson_description)
-  //   console.log('lesson description', element.lesson_description);
-  // });
-  //{" <div className="recipe_image-container">"}
-  //{"</div> "}
   return (
     <section className="recipes">
       {lessonData
-        ? lessonData.map(lesson => (
+        ? filterByInput(searchInput, lessonData).map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
                 <ImageContainer
