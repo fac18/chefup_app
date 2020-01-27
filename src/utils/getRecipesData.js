@@ -6,8 +6,7 @@ const checkResponse = response => {
   }
   return response.json();
 };
-export const getRecipesData = searchInput => {
-  // searchInput will come from the search bar and be used to filter the returned values
+export const getRecipesData = () => {
   return fetch(
     `https://api.airtable.com/v0/appnneO9UdlcBo0C3/Table%201?api_key=${token}`
   )
