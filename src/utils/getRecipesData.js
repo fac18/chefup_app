@@ -12,6 +12,6 @@ export const getRecipesData = () => {
   )
     .then(checkResponse)
     .catch(err => {
-      throw new Error(`fetch getTeamData failed ${err}`);
+      throw new Error(`fetch getLessonData failed ${err}`);
     });
 };
