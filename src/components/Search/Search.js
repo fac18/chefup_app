@@ -1,11 +1,10 @@
 import React from "react";
 import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
 import "./search.css";
-const SearchBar = () => {
-  const [searchInput, setSearchInput] = React.useState(undefined);
+const SearchBar = ({ searchInput, setSearchInput }) => {
   // we will need to have an extra function here to do a get request to our database
   // so that we can filter the search results as the user is typing
-
+  console.log(searchInput);
   return (
     <form>
       <input
