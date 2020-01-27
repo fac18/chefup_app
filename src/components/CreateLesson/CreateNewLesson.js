@@ -16,7 +16,7 @@ function reducer(state, { field, value }) {
         ...state,
         [field]: value
     }
-}
+}    
 
 const Signup = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
