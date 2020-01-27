@@ -3,8 +3,7 @@ import "./recipeCard.css";
 
 import { ImageContainer } from "./css-components";
 
-const RecipeCard = ({lessonData}) => {
-
+const RecipeCard = ({ lessonData }) => {
   if (lessonData === null) {
     return (
       <div>
@@ -22,7 +21,6 @@ const RecipeCard = ({lessonData}) => {
     <section className="recipes">
       {lessonData
         ? lessonData.map(lesson => (
-          
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
                 <ImageContainer
@@ -30,9 +28,10 @@ const RecipeCard = ({lessonData}) => {
                   alt={lesson.title}
                 ></ImageContainer>
 
-
                 <h1>{lesson.title}</h1>
-                <h2>{lesson.teacher}, {lesson.location}, £{lesson.price}</h2>
+                <h2>
+                  {lesson.teacher}, {lesson.location}, £{lesson.price}
+                </h2>
                 {/* <p>{lesson.description}</p>
                 <p>{lesson.time}</p>
                 <p>{lesson.duration}</p>

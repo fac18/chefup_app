@@ -1,33 +1,29 @@
 import React from "react";
-import './lesson.css';
+import "./lesson.css";
 
-{/* <LessonHeader {lesson.image_url, lesson.title, lesson.teacher, lesson.price}/>
-<p>{lesson.description}</p>
-<p>{lesson.time}</p>
-<p>{lesson.duration}</p>
-<p>{lesson.ingredients}</p> */}
-const Lesson = ({result}) => {
-  console.log({result});
+const Lesson = ({ result }) => {
+  console.log(result);
+  // <ImageContainer
+  //   imageUrl={result.image_url}
+  //   alt={result.title}
+  // ></ImageContainer>
   return (
-    
-    <div className="image_container">
-      <div className="lesson_header">
-        <div className="lesson_title_level">
-          <div className="lesson_title">
-            <p>Spaghetti and meatballs</p>
-          </div>
-          <div className="lesson_level">
-            <p>Level: beginner</p>
-          </div>
+    <div className="recipes_lesson-details">
+      {result ? (
+        <div>
+          <h1>{result.title}</h1>
+          <h2>
+            {result.teacher}, {result.location}, £{result.price}
+          </h2>
+          <p>{result.description}</p>
+          <p>{result.time}</p>
+          <p>{result.duration}</p>
+          <p>{result.ingredients}</p>
+          <a href={result.lessonUrl}>LEARN MORE</a>
         </div>
-        <div className="lesson_price">
-          <p>£25</p>
-        </div>
-      </div>
+      ) : null}
     </div>
-
-    
-  )
-}
+  );
+};
 
 export default Lesson;
