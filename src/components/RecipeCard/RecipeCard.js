@@ -7,12 +7,6 @@ const RecipeCard = ({ searchInput, lessonData }) => {
   if (lessonData === null) {
     return null;
   }
-  // lessonData.forEach(element => {
-  //   // console.log('lesson description ', element.fields.lesson_description)
-  //   console.log('lesson description', element.lesson_description);
-  // });
-  //{" <div className="recipe_image-container">"}
-  //{"</div> "}
   return (
     <section className="recipes">
       {searchInput
