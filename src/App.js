@@ -2,6 +2,7 @@ import React from "react";
 import {
   Route,
   Link,
+  useParams,
   BrowserRouter as Router,
   Switch,
   withRouter
@@ -42,9 +43,12 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
+        <Route exact path="/" render={() => <Home lessonData={lessonData} />} />
         <Route path="/teach" component={withRouter(createRecipe)} />
-        <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
+        <Route
+          path="/DisplayLesson/:id"
+          render={() => <DisplayLesson lessonData={lessonData} />}
+        />
         <Route path="/profile" component={withRouter(profile)} />
         <Route path="/aboutUs" component={withRouter(aboutUs)} />
       </Switch>

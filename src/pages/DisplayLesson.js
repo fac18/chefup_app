@@ -9,9 +9,11 @@ const DisplayRecipe = ({ lessonData }) => {
   if (!lessonData) {
     return <h3>loading...</h3>;
   }
+  console.log(id);
   const result = lessonData.filter(singleLesson => {
     return singleLesson.id === id;
   });
+  console.log(result);
 
   return (
     <div>
