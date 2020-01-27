@@ -3,8 +3,7 @@ import {
   Route,
   Link,
   BrowserRouter as Router,
-  Switch,
-  withRouter
+  Switch
 } from "react-router-dom";
 import "./index.css";
 import "./App.css";
@@ -14,10 +13,10 @@ import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
 import AboutPage from "./pages/AboutPage";
 import Login from "./pages/LoginPage";
-import SignUp from './pages/SignUpPage'
 import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
+import SignUpPage from "./pages/SignUpPage";
 
 function App() {
   const [lessonData, setLessonData] = React.useState(null);
@@ -50,7 +49,7 @@ function App() {
         <Route path="/ProfilePage" render={() => (<ProfilePage />)} />
         <Route path="/AboutPage" render={() => (<AboutPage />)} />
         <Route path="/Login" render={() => (<Login />)} />
-        <Route path='/SignUp' render={() => (<SignUp />)} />
+        <Route path='/SignUp' render={() => (<SignUpPage />)} />
       </Switch>
     </Router>
   );
