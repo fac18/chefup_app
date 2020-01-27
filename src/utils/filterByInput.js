@@ -1,7 +1,11 @@
 export const filterByInput = (inputStr, array) => {
-  let lowerCaseInput = inputStr.toLowerCase();
   //input string and lesson.title will only match using includes() if both are lower case
-  return array.filter(lesson => {
-    return lesson.title.toLowerCase().includes(lowerCaseInput);
-  });
+  if (inputStr === undefined) {
+    return array;
+  } else {
+    return array.filter(lesson => {
+      let lowerCaseInput = inputStr.toLowerCase();
+      return lesson.title.toLowerCase().includes(lowerCaseInput);
+    });
+  }
 };

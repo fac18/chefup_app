@@ -9,7 +9,7 @@ const RecipeCard = ({ searchInput, lessonData }) => {
   }
   return (
     <section className="recipes">
-      {searchInput
+      {lessonData
         ? filterByInput(searchInput, lessonData).map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">
@@ -30,26 +30,7 @@ const RecipeCard = ({ searchInput, lessonData }) => {
               </div>
             </article>
           ))
-        : lessonData.map(lesson => (
-            <article data-testid={lesson.id} className="recipes_recipeCard">
-              <div className="recipes_lesson-details">
-                <ImageContainer
-                  imageUrl={lesson.image_url}
-                  alt={lesson.title}
-                ></ImageContainer>
-
-                <h1>{lesson.title}</h1>
-                <h2>
-                  {lesson.teacher}, {lesson.location}, £{lesson.price}
-                </h2>
-                {/* <p>{lesson.description}</p>
-                <p>{lesson.time}</p>
-                <p>{lesson.duration}</p>
-                <p>{lesson.ingredients}</p> */}
-                <a href={lesson.lessonUrl}>LEARN MORE</a>
-              </div>
-            </article>
-          ))}
+        : null}
     </section>
   );
 };
