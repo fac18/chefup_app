@@ -13,10 +13,10 @@ const HomePageHeader = () => {
                         <Link to="/AboutPage">About Us</Link>
                     </li>
                     <li>
-                        <Link to="/login">Login</Link>
+                        <Link to="/LoginPage">Login</Link>
                     </li>
                     <li>
-                        <Link to="/signUp">Sign Up</Link>
+                        <Link to="/SignUp">Sign Up</Link>
                     </li>
                 </ul>
             </nav>
