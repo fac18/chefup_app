@@ -16,7 +16,7 @@ const HomePageHeader = () => {
                         <Link to="/LoginPage">Login</Link>
                     </li>
                     <li>
-                        <Link to="/signUp">Sign Up</Link>
+                        <Link to="/SignUp">Sign Up</Link>
                     </li>
                 </ul>
             </nav>

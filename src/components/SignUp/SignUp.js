@@ -1,11 +1,14 @@
 import React from 'react';
+import './signup.css';
 
 const Signup = () => {
     return (
-      <form>
+      <form className="signup-form">
         <div>
           <label>First Name</label>
           <input type="text" name="firstName" required />
+        </div>
+        <div>
           <label>Last Name</label>
           <input type="text" name="lastName" required />
         </div>
