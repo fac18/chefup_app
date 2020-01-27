@@ -6,7 +6,7 @@ import { ReactComponent as Diamond2 } from "../icons/diamond-2.svg";
 import { ReactComponent as Diamond3 } from "../icons/diamond-3.svg";
 
 
-const aboutUs = () => {
+const AboutPage = () => {
     return (
         <div>
             <Header />
@@ -31,5 +31,5 @@ const aboutUs = () => {
     )
 }
 
-export default aboutUs
+export default AboutPage
 
