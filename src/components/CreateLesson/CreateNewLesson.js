@@ -1,14 +1,21 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
 
+// Link to how to useReducer for our future reference
+//https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935
+
 const initialState = {
-    username: '',
-    firstName: '',
-    lastName: '',
-    email: '',
-    password1: '',
-    password2: '',
+    photo: '',
+    dishName: '',
+    lessonLength: '',
+    lessonDates: '',
+    lessonHours: '',
     location: ''
+    distanceToTravel: '',
+    skillLevel: ['Beginner, Intermediate, Advanced'],
+    ingredients: '',
+    description: ''
+    dietaryOptions: ''
 }
 
 function reducer(state, { field, value }) {
@@ -18,7 +25,7 @@ function reducer(state, { field, value }) {
     }
 }    
 
-const Signup = () => {
+const CreateNewLesson = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     // if(state) {
@@ -34,70 +41,70 @@ const Signup = () => {
     return (
       <form className="lesson-form">
         <div>
-          <label>Photo</label>
-          <input type="file" name="dishPhoto" defaultValue={photo} required onChange={onChange}/>
+          <label for="dishPhoto">Photo</label>
+          <input type="file" name="dishPhoto" id="dishPhoto" defaultValue={photo} required onChange={onChange}/>
         </div>
         <div>
-          <label>What's the name of your dish?</label>
-          <input type="text" name="dishName" defaultValue={dishName} required onChange={onChange}/>
+          <label for="dishName">What's the name of your dish?</label>
+          <input type="text" name="dishName" id="dishName" defaultValue={dishName} required onChange={onChange}/>
         </div>
         <div>
-          <label>Leeson Length</label>
-          <input type="text" name="lessonLength" defaultValue={lessonLength} required onChange={onChange}/>
+          <label for="lessonLength">Lesson Length</label>
+          <input type="text" name="lessonLength" id="lessonLength" defaultValue={lessonLength} required onChange={onChange}/>
         </div>
         <div>
-          <label>Select the date and time you are available to teach:</label>
+          <p>Select the date and time you are available to teach:</p>
           {/* create html where they can add more than 1 input time and date */}
-          <input type="date" name="lessonDates" defaultValue={lessonDates} required onChange={onChange}/>
-          <input type="time" name="lessonHours" defaultValue={lessonHours} required onChange={onChange}/>
+          <label for="lessonDates"><input type="date" name="lessonDates" id="lessonDates" defaultValue={lessonDates} required onChange={onChange}/></label>
+          <label for="lessonHours"><input type="time" name="lessonHours" id="lessonHours" defaultValue={lessonHours} required onChange={onChange}/></label>
         </div>
         <div>
-          <label>Location</label>
-          <input type="text" name="location" defaultValue={location} onChange={onChange}/>
+          <label for="location">Location</label>
+          <input type="text" name="location" id="location" defaultValue={location} onChange={onChange}/>
         </div>
         <div>
-          <label>What distance are you willing to travel?</label>
-          <input type="text" name="distanceToTravel" defaultValue={distanceToTravel} onChange={onChange}/>
+          <label for="distanceToTravel">What distance are you willing to travel?</label>
+          <input type="text" name="distanceToTravel" id="distanceToTravel" defaultValue={distanceToTravel} onChange={onChange}/>
         </div>
         <div>
-          <label>What skill level do you believe this lesson would be suitable for?</label>
-          <input type="radio" name="skillLevel" defaultValue={skillLevel} onChange={onChange}/>
-          <input type="radio" name="skillLevel" defaultValue={skillLevel} onChange={onChange}/>
-          <input type="radio" name="skillLevel" defaultValue={skillLevel} onChange={onChange}/>
+          <p>What skill level do you believe this lesson would be suitable for?</p>
+          <label for="beginner"><input type="radio" name="skillLevel" id="beginner" defaultValue={skillLevel[0]} onChange={onChange}/></label>
+          <label for="intermediate"><input type="radio" name="skillLevel" id="intermediate" defaultValue={skillLevel[1]} onChange={onChange}/></label>
+          <label for="advanced"><input type="radio" name="skillLevel" id="advanced" defaultValue={skillLevel[2]} onChange={onChange}/></label>
         </div>
         <div>
-          <label>Ingredients:</label>
-          <input type="textarea" name="ingredients" defaultValue={ingredients} onChange={onChange}/>
+            <p>Ingredients:</p>
+          <label><input type="textarea" name="ingredients" defaultValue={ingredients} onChange={onChange}/></label>
         </div>        
         <div>
-          <label>Description:</label>
-          <input type="textarea" name="description" defaultValue={description} onChange={onChange}/>
+            <p>Description:</p>
+          <label for="description"><input type="textarea" name="description" id="description" defaultValue={description} onChange={onChange}/></label>
         </div>
         <div>
             <p>Tick all that apply:</p>
-          <label>Vegetarian</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>
-          <label>Vegan</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Pescatarian</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Meat</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Organic</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Dairy Free</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Gluten Free</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Halal</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Kosher</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>          
-          <label>Paleo</label>
-          <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>        
+            <p>Vegetarian</p>
+          <label for="vegetarian"><input type="checkbox" id="vegetarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Vegan</p>
+          <label for="vegan"><input type="checkbox" id="vegan" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Pescatarian</p>
+          <label for="pescatarian"><input type="checkbox" id="pescatarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Meat</p>
+          <label for="meat"><input type="checkbox" id="meat" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Organic</p>
+          <label for="organic"><input type="checkbox" id="organic" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Dairy Free</p>
+          <label for="dairyFree"><input type="checkbox" id="dairyFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Gluten Free</p>
+          <label for="glutenFree"><input type="checkbox" id="glutenFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Halal</p>
+          <label for="halal"><input type="checkbox" id="halal" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Kosher</p>
+          <label for="kosher"><input type="checkbox" id="kosher" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
+          <p>Paleo</p>
+          <label for="paleo"><input type="checkbox" id="paleo" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></label>
           </div>
-        <button type="submit">Sign Up</button>
+        <label><button type="submit">Sign Up</button></label>
       </form>
     )
   }
-  export default Signup;
+  export default CreateNewLesson;
