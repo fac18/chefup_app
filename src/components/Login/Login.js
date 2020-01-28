@@ -23,6 +23,7 @@ const Login = () => {
     return (
         <div>
             <form>
+                <Label>
                 <Input
                     type="text"
                     id="username"
@@ -31,6 +32,8 @@ const Login = () => {
                     defaultValue={login.username}
                     placeholder="Enter your username here"
                 ></Input>
+                </Label>
+                <Label>
                 <Input
                     type="password"
                     id="password"
@@ -39,7 +42,10 @@ const Login = () => {
                     defaultValue={login.password}
                     placeholder="Enter your password here"
                 ></Input>
+                </Label>
+                <Label>
                 <Input type="submit" value="Submit" onChange={event => setLogin(event.target.value)} />
+                </Label>
             </form>
         </div>
     )
