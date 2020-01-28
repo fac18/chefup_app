@@ -1,6 +1,7 @@
 button {
   background-color: var(--primary-app-colour);
-  width: var(--space-xxl);
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
 }
 form {
   display: flex;

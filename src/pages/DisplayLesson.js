@@ -3,6 +3,7 @@ import Lesson from "../components/Lesson/Lesson";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useParams } from "react-router-dom";
+import BookLessonForm from "../components/BookLessonForm/BookLessonForm";
 
 const DisplayRecipe = ({ lessonData }) => {
   let { id } = useParams();
@@ -18,6 +19,7 @@ const DisplayRecipe = ({ lessonData }) => {
     <div>
       <Header />
       <Lesson result={result[0]} />
+      <BookLessonForm />
       <Footer />
     </div>
   );
