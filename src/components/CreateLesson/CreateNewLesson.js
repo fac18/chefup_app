@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 import "./createNewLesson.css";
 import { Form, Input, Label } from "../CSSFormComponents.js";
-
+import postLessonData from "../../utils/postLessonData";
 // Link to how to useReducer for our future reference
 //https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935
 
@@ -67,9 +67,14 @@ const CreateNewLesson = () => {
     console.log({ dietaryOptions });
   };
   // console.log({ dietaryOptions });
+  const handleSubmit = event => {
+    event.preventDefault();
+    alert("congratulations, you created a lesson");
+    postLessonData(state);
+  };
 
   return (
-    <Form className="lesson-form">
+    <Form onSubmit={handleSubmit} className="lesson-form">
       <div>
         <Label for="dishPhoto">Photo</Label>
         <Input
