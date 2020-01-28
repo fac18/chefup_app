@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './Footer.css'
 import { ReactComponent as HomeIcon } from "../../icons/homeIconWhite.svg";
 import { ReactComponent as TeachIcon } from "../../icons/teachIconWhite.svg";
