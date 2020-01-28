@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
+import { Form, Input, Button, Label } from "../CSSFormComponents.js";
 
 // Link to how to useReducer for our future reference
 //https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935

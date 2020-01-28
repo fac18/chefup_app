@@ -1,5 +1,6 @@
 import React from "react";
 import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
+import { Form, Input, Button, Label } from "../CSSFormComponents.js";
 import "./search.css";
 import { Form, Input, Button } from "../CSSFormComponents.js";
 
