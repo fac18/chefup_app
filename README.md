@@ -1,3 +1,61 @@
+# ChefUp
+A cooking app to match people who want to learn new home cooking styles in their own home, by finding a local chef to teach them how to cook authentic home made meals.
+
+## Contents
+
+- [Team](#team)
+- [Installation](#installation)
+- [User Journey](#user-journey)
+- [Design week](#design-week)
+- [First Build Sprint](#first-build-sprint)
+- [Second Build Sprint](#second-build-sprint)
+- [Stretch Goals](#stretch-goals)
+- [Things we've learnt](#things-we-learnt)
+- [Tech Stack](#tech-stack)
+
+---
+
+### Team
+Scrum Master - [Nikke](https://github.com/nikkesan) 
+UX Lead - [Alex](https://github.com/AlexandraOM)
+DevOps - [Pat](https://github.com/pat-cki)
+QA - [Maria](https://github.com/marialani)
+
+### Installation
+1. Clone repo ```git@github.com:fac18/chefup_app.git```
+2. Install dependencies ```npm i```
+3. Set up ```.env``` file in the root directory.  Please request ```REACT_APP_TOKEN``` token from any team member listed above.
+4. Start server with ```npm start```.  This should load to ```localhost:3000```
+
+### User Journey
+
+### Design Week
+
+### First Build Sprint
+
+### Second Build Sprint
+
+### Stretch Goals
+
+### Things we've learnt
+
+### Tech Stack
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
