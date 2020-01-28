@@ -1,12 +1,8 @@
 # ChefUp
 A cooking app to match people who want to learn new home cooking styles in their own home, by finding a local chef to teach them how to cook authentic home made meals.
 
-<img src="https://i.imgur.com/QICZA8U.png" width="400">
-<img src="" width="400">
+<img src="https://i.imgur.com/QICZA8U.png" width="500">
 
-## Useful links:
-- [ChefUp App](https://chefup.netlify.com/)
-- [Figma](https://www.figma.com/file/G2FduaeR6RYVzO6CPon4xU/Chef-Up?node-id=0%3A1)
 ---
 
 ## Contents
@@ -37,7 +33,8 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 1. Clone repo `git@github.com:fac18/chefup_app.git`
 2. Install dependencies ```npm i```
 3. Set up `.env` file in the root directory.  Please request `REACT_APP_TOKEN` token from any team member listed above.
-4. Start server with `npm start`.  This should load to `localhost:3000`
+4. Start server with `npm start`.  This should load to `http://localhost:3000`
+5. To check tests, run `npm test`
 
 ---
 
@@ -53,37 +50,56 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 ### User Journey
 
 #### Initial brainstorming
-<img src="https://i.imgur.com/aT6xbP9.jpg" width="400">
+
+As a team we brainstormed what we envisioned the user journey would be - both as a student AND a teacher using the app
+<img src="https://i.imgur.com/aT6xbP9.jpg" width="500">
 
 ---
 
 ### Design Week
 
+#### Mood board
+We collected ideas from apps that we've used, and collated together our design inspirations onto a mood board \
+<img src="https://i.imgur.com/GrEJpTw.jpg" width="500">
+
+[Mood board can be found here](https://www.figma.com/file/6vYWzMYMMSOeIv9CrzRpS3/Prototyping-in-Figma?node-id=0%3A1)
+
 #### Rapid prototyping
-<img src="https://i.imgur.com/WPhLMTU.jpg" width="400">
+<img src="https://i.imgur.com/WPhLMTU.jpg" width="500">
 
 #### Crazy 8's
-<img src="https://i.imgur.com/W0cEpw6.jpg" width="400">
+Each member had a quick 2min per frame to sketch out ideas of our app interface \
+<img src="https://i.imgur.com/W0cEpw6.jpg" width="500">
 
 #### Merging team designs
-<img src="https://i.imgur.com/RySmJxP.jpg" width="400">
+As a team we picked the best elements of all our designs \
+<img src="https://i.imgur.com/RySmJxP.jpg" width="500">
+
+---
 
 ### Building in Figma
 
+[Click here for Figma Prototype link](https://www.figma.com/file/G2FduaeR6RYVzO6CPon4xU/Chef-Up?node-id=0%3A1)
+
 #### Fixed components
-<img src="https://i.imgur.com/PFlLUfJ.png" width="200"><img src="https://i.imgur.com/JbBEuu3.png" width="400">
+These are componenets designed to be re-used throughout the app \
+<img src="https://i.imgur.com/PFlLUfJ.png" width="200"><img src="https://i.imgur.com/JbBEuu3.png" width="500">
 
 #### User journey sketching 
-<img src="https://i.imgur.com/ow6CbYb.jpg" width="400">
+Designing mobile first our user journey \
+<img src="https://i.imgur.com/ow6CbYb.jpg" width="500">
 
 #### Connected Prototypes
-<img src="https://i.imgur.com/gTGRSsl.png" width="400">
+Connecting up our user journey sketches ready for teseting \
+<img src="https://i.imgur.com/gTGRSsl.png" width="500">
 
 ---
 
 ### User Research
 
-#### Our findings
+[Full user research questionnaires and found here](https://airtable.com/tblIi5EMcQMdzs67M/viwdVxb4SMTv5Jahy?blocks=hide) 
+
+#### Summary of our findings
 - Friends and Family -> The internet to learn something new
 - Cooking preferences are based on friends and family (as well as impressing them)
 - Prefer home cooked food
@@ -100,28 +116,59 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 - Trust issues - is it safe to invite someone to my home?
 - What do I really pay for? 
 
-#### User Journey overview
-- As a user, I want to be able to search for and sign up for free cooking lessons stratified by location and type of food
+#### User Stories
 
-#### Steps
-- Be able to search for what is available in my area
-- Be able to view the results in an intuitive way
-- Be able to book a teacher to teach me how to cook 
-- View guidance/guidelines as to how the process works, on demand
-- Be able to view update/amend my details as well as my booking from my profile page
-- Be able to leave reviews for teachers/lessons I have attended
+[User stories captured on our AirTable here](https://airtable.com/tblBbG7unqX5K1Uat/viwTMheFWsOCwQAqI?blocks=hide)
 
----
+User stories are also broken down into build sprints as below, including point Estimates vs Actuals for each sprint: 
+
 
 ### First Build Sprint
+
+We prioritised our user stories into two sprints in order to achieve a MVP.  Our first sprint comprised of: 
+
+| No. | User stories  | Estimates     | Value | Actuals       | Value |
+| :-------------: | ------------- |-------------| :----:|-------------| :----:|
+| 1 | I want to arrive at home page and clearly understand what Chef Up is | ⭐️ | 1 | ⭐️⭐️ | 2 |
+| 4 | I can see a search bar on the home screen  | ⭐️ |    1 | ⭐️ | 1 |
+| 5 | I can see cooking lessons on the home screen  | ⭐️⭐️ |    2 | ⭐️⭐️⭐️ | 3 |
+| 2 | I want to be able to have access to more information about the app and its community if I want to | ⭐️⭐️ | 2 |  | - |
+| 14 | My cooking lesson is searchable | ⭐️⭐️⭐️ | 3 |  | - |
+| 22 | I want to type in the search bar and see in real time the results being updated | ⭐️⭐️⭐️ | 3 |  | - |
+| 10 | I can book a cooking lesson | ⭐️⭐️⭐️ |    3 |  | - |
+| 6 | I can select a cooking lesson and see more info | ⭐️⭐️⭐️⭐️⭐️ | 5 | ⭐️⭐️⭐️⭐️ | 4 |
+|   | **TOTAL**  |   | **20** |  | **10** |
+
 
 ---
 
 ### Second Build Sprint
 
+| No. | User stories  | Estimates     | Value | Actuals       | Value |
+| :-------------: | ------------- |-------------| :----:|-------------| :----:|
+| 3 | I want to be able to skip the introduction to this app (if I am not new) | ⭐️⭐️ | 2 |  | - |
+| 13 | I can create my own cooking lesson  | ⭐️⭐️⭐️ | 3 |  | - |
+| 16 | I want to know that my information is secure | ⭐️⭐️⭐️ | 3 |  | - |
+| 15 | As a local chef, my new cooking lesson is bookable | ⭐️⭐️⭐️ | 3 |  | - |
+| 7 | I have to log in and create my own profile if I want to book a lesson | ⭐️⭐️⭐️⭐️⭐️ | 5 |  | - |
+| 9 | I can create my own profile  | ⭐️⭐️⭐️⭐️⭐️ |    5 |  | - |
+| 8 | I can log in  | ⭐️⭐️⭐️⭐️⭐️ |    5 |  | - |
+| 11 | I can log out | ⭐️⭐️⭐️⭐️⭐️ |    5 |  | - |
+| 12 | I want to create an account and become a local chef | ⭐️⭐️⭐️⭐️⭐️ |    5 |  | - |
+|   | **TOTAL** |  | **36** |  | **0** |
+
 ---
 
 ### Stretch Goals
+
+| No. | User stories  | Estimates     | Value | Actuals       | Value |
+| :-------------: | ------------- |-------------| :----:|-------------| :----:|
+| 17 | I want to see lots of profile information to secure my confidence in booking/teaching | ⭐️⭐️⭐️⭐️ | 4 |  | - |
+| 18 | I want to filter my searches by cuisine, location, dietary requirements, allergies | ⭐️⭐️⭐️⭐️⭐️ | 5 |  | - |
+| 19 | I want to leave feedback on my local chefs and their recipes | ⭐️⭐️⭐️⭐️⭐️ | 5 |  | - |
+| 20 | I want to keep track of the lessons I've booked | ⭐️⭐️⭐️⭐️⭐️ | 5 |  | - |
+| 21 | I want to collect badges on my profile to show I am trustworthy  | ⭐️⭐️⭐️⭐️⭐️ | 5 |  | - |
+|   | **TOTAL** |  | **24** |  | **0** |
 
 ---
 
@@ -136,87 +183,3 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 - React
 - Netlify
 - AirTable
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
