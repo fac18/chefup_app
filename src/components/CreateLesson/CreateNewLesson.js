@@ -1,9 +1,11 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
-import { Form, Input, Label } from "../CSSFormComponents.js";
+import postLessonData from '../../utils/postLessonData'
+import { Form, Input, Button, Label } from "../CSSFormComponents.js";
 
 // Link to how to useReducer for our future reference
 //https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935
+
 
 const initialState = {
     photo: '',
@@ -16,7 +18,7 @@ const initialState = {
     skillLevel: '',
     ingredients: '',
     description: '',
-    dietaryOptions: ''
+    dietaryOptions: []
 }
 
 function reducer(state, { field, value }) {
@@ -28,6 +30,9 @@ function reducer(state, { field, value }) {
 
 const CreateNewLesson = () => {
     const [state, dispatch] = useReducer(reducer, initialState);
+    const [checked, setChecked] = React.useState(false);
+    initialState.dietaryOptions = [];
+    console.log(checked);
 
     // if(state) {
     //     console.log(state);
@@ -39,8 +44,17 @@ const CreateNewLesson = () => {
 
     const { photo, dishName, lessonLength, lessonDates, lessonHours, location, distanceToTravel, skillLevel, ingredients, description, dietaryOptions } = state;
 
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert("congratulations, you created a lesson");
+      postLessonData(state);
+    }
+
     return (
-      <Form className="lesson-form">
+
+      <Form className="lesson-form" onSubmit={handleSubmit} >
+
+
         <div>
           <Label for="dishPhoto">Photo</Label>
           <Input type="file" name="dishPhoto" id="dishPhoto" defaultValue={photo} required onChange={onChange}/>
@@ -82,28 +96,31 @@ const CreateNewLesson = () => {
           <Label for="description"><Input type="textarea" name="description" id="description" required defaultValue={description} onChange={onChange}/></Label>
         </div>
         <div>
+          <fieldset>
             <p>Tick all that apply:</p>
             <p>Vegetarian</p>
-          <Label for="vegetarian"><Input type="checkbox" id="vegetarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="vegetarian"><Input type="checkbox" id="vegetarian" name="dietaryOptions" value='Vegetarian' /></Label>
           <p>Vegan</p>
-          <Label for="vegan"><Input type="checkbox" id="vegan" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="vegan"><Input type="checkbox" id="vegan" name="dietaryOptions" value='Vegan' /></Label>
           <p>Pescatarian</p>
-          <Label for="pescatarian"><Input type="checkbox" id="pescatarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="pescatarian"><Input type="checkbox" id="pescatarian" name="dietaryOptions" value='Pescatarian' /></Label>
           <p>Meat</p>
-          <Label for="meat"><Input type="checkbox" id="meat" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="meat"><Input type="checkbox" id="meat" name="dietaryOptions" value='Meat' /></Label>
           <p>Organic</p>
-          <Label for="organic"><Input type="checkbox" id="organic" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="organic"><Input type="checkbox" id="organic" name="dietaryOptions" value='Organic' /></Label>
           <p>Dairy Free</p>
-          <Label for="dairyFree"><Input type="checkbox" id="dairyFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="dairyFree"><Input type="checkbox" id="dairyFree" name="dietaryOptions" value='Dairy-free' /></Label>
           <p>Gluten Free</p>
-          <Label for="glutenFree"><Input type="checkbox" id="glutenFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="glutenFree"><Input type="checkbox" id="glutenFree" name="dietaryOptions" value='Gluten-free' /></Label>
           <p>Halal</p>
-          <Label for="halal"><Input type="checkbox" id="halal" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="halal"><Input type="checkbox" id="halal" name="dietaryOptions" value='Halal' /></Label>
           <p>Kosher</p>
-          <Label for="kosher"><Input type="checkbox" id="kosher" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="kosher"><Input type="checkbox" id="kosher" name="dietaryOptions" value='Kosher' /></Label>
           <p>Paleo</p>
-          <Label for="paleo"><Input type="checkbox" id="paleo" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="paleo"><Input type="checkbox" id="paleo" name="dietaryOptions" value='Paleo' /></Label>
+          </fieldset>
           </div>
+
         <Label><button type="submit">Sign Up</button></Label>
       </Form>
     )
