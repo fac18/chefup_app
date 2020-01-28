@@ -1,5 +1,6 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
+import postLessonData from '../../utils/postLessonData'
 
 const initialState = {
     username: '',
@@ -31,8 +32,14 @@ const Signup = () => {
 
     const { photo, dishName, lessonLength, lessonDates, lessonHours, location, distanceToTravel, skillLevel, ingredients, description, dietaryOptions } = state;
 
+    const handleSubmit = (event) => {
+      event.preventDefault();
+      alert("congratulations, you created a lesson");
+      postLessonData(state);
+    }
+
     return (
-      <form className="lesson-form">
+      <form className="lesson-form" onSubmit={handleSubmit} >
         <div>
           <label>Photo</label>
           <input type="file" name="dishPhoto" defaultValue={photo} required onChange={onChange}/>
@@ -96,7 +103,7 @@ const Signup = () => {
           <label>Paleo</label>
           <input type="checkbox" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/>        
           </div>
-        <button type="submit">Sign Up</button>
+        <button type="submit" defaultValue="submit" >Sign Up</button>
       </form>
     )
   }
