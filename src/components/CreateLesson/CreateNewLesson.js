@@ -10,7 +10,7 @@ const initialState = {
     lessonLength: '',
     lessonDates: '',
     lessonHours: '',
-    location: ''
+    location: '',
     distanceToTravel: '',
     skillLevel: '',
     ingredients: '',
