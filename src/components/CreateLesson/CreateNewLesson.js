@@ -1,6 +1,5 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
-
 import postLessonData from '../../utils/postLessonData'
 import { Form, Input, Button, Label } from "../CSSFormComponents.js";
 
@@ -73,48 +72,48 @@ const CreateNewLesson = () => {
         </div>
         <div>
           <Label for="location">Location</Label>
-          <Input type="text" name="location" id="location" defaultValue={location} onChange={onChange}/>
+          <Input type="text" name="location" id="location" defaultValue={location} required onChange={onChange}/>
         </div>
         <div>
           <Label for="distanceToTravel">What distance are you willing to travel?</Label>
-          <Input type="text" name="distanceToTravel" id="distanceToTravel" defaultValue={distanceToTravel} onChange={onChange}/>
+          <Input type="text" name="distanceToTravel" id="distanceToTravel" defaultValue={distanceToTravel} required onChange={onChange}/>
         </div>
         <div>
           <p>What skill level do you believe this lesson would be suitable for?</p>
-          <Label for="beginner"><Input type="radio" name="skillLevel" id="beginner" defaultValue={skillLevel[0]} onChange={onChange}/></Label>
-          <Label for="intermediate"><Input type="radio" name="skillLevel" id="intermediate" defaultValue={skillLevel[1]} onChange={onChange}/></Label>
-          <Label for="advanced"><Input type="radio" name="skillLevel" id="advanced" defaultValue={skillLevel[2]} onChange={onChange}/></Label>
+          <Label for="beginner">Beginner<Input type="radio" name="skillLevel" id="beginner" defaultValue={skillLevel[0]} onChange={onChange}/></Label>
+          <Label for="intermediate">Intermediate<Input type="radio" name="skillLevel" id="intermediate" defaultValue={skillLevel[1]} onChange={onChange}/></Label>
+          <Label for="advanced">Advanced<Input type="radio" name="skillLevel" id="advanced" defaultValue={skillLevel[2]} onChange={onChange}/></Label>
         </div>
         <div>
             <p>Ingredients:</p>
-          <Label><Input type="textarea" name="ingredients" defaultValue={ingredients} onChange={onChange}/></Label>
+          <Label><Input type="textarea" name="ingredients" defaultValue={ingredients} required onChange={onChange}/></Label>
         </div>        
         <div>
             <p>Description:</p>
-          <Label for="description"><Input type="textarea" name="description" id="description" defaultValue={description} onChange={onChange}/></Label>
+          <Label for="description"><Input type="textarea" name="description" id="description" required defaultValue={description} onChange={onChange}/></Label>
         </div>
         <div>
             <p>Tick all that apply:</p>
             <p>Vegetarian</p>
-          <Label for="vegetarian"><Input type="checkbox" id="vegetarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="vegetarian"><Input type="checkbox" id="vegetarian" name="dietaryOptions" defaultValue='Vegetarian' onChange={onChange}/></Label>
           <p>Vegan</p>
-          <Label for="vegan"><Input type="checkbox" id="vegan" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="vegan"><Input type="checkbox" id="vegan" name="dietaryOptions" defaultValue='Vegan' onChange={onChange}/></Label>
           <p>Pescatarian</p>
-          <Label for="pescatarian"><Input type="checkbox" id="pescatarian" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="pescatarian"><Input type="checkbox" id="pescatarian" name="dietaryOptions" defaultValue='Pescatarian' onChange={onChange}/></Label>
           <p>Meat</p>
-          <Label for="meat"><Input type="checkbox" id="meat" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="meat"><Input type="checkbox" id="meat" name="dietaryOptions" defaultValue='Meat' onChange={onChange}/></Label>
           <p>Organic</p>
-          <Label for="organic"><Input type="checkbox" id="organic" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="organic"><Input type="checkbox" id="organic" name="dietaryOptions" defaultValue='Organic' onChange={onChange}/></Label>
           <p>Dairy Free</p>
-          <Label for="dairyFree"><Input type="checkbox" id="dairyFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="dairyFree"><Input type="checkbox" id="dairyFree" name="dietaryOptions" defaultValue='Dairy-free' onChange={onChange}/></Label>
           <p>Gluten Free</p>
-          <Label for="glutenFree"><Input type="checkbox" id="glutenFree" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="glutenFree"><Input type="checkbox" id="glutenFree" name="dietaryOptions" defaultValue='Gluten-free' onChange={onChange}/></Label>
           <p>Halal</p>
-          <Label for="halal"><Input type="checkbox" id="halal" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="halal"><Input type="checkbox" id="halal" name="dietaryOptions" defaultValue='Halal' onChange={onChange}/></Label>
           <p>Kosher</p>
-          <Label for="kosher"><Input type="checkbox" id="kosher" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="kosher"><Input type="checkbox" id="kosher" name="dietaryOptions" defaultValue='Kosher' onChange={onChange}/></Label>
           <p>Paleo</p>
-          <Label for="paleo"><Input type="checkbox" id="paleo" name="dietaryOptions" defaultValue={dietaryOptions} onChange={onChange}/></Label>
+          <Label for="paleo"><Input type="checkbox" id="paleo" name="dietaryOptions" defaultValue='Paleo' onChange={onChange}/></Label>
           </div>
 
         <Label><button type="submit">Sign Up</button></Label>
