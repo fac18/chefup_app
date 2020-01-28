@@ -2,7 +2,7 @@ import React from "react";
 import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
 import { Form, Input, Button, Label } from "../CSSFormComponents.js";
 import "./search.css";
-import { Form, Input, Button } from "../CSSFormComponents.js";
+import { Form, Input, Button } from "../CSSFormComponents";
 
 const SearchBar = ({ searchInput, setSearchInput }) => {
   // we will need to have an extra function here to do a get request to our database
