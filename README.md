@@ -1,6 +1,6 @@
 # ChefUp
 
-A cooking app to match people who want to learn new home cooking styles in their own home, by finding a local chef to teach them how to cook authentic home made meals.
+A cooking app to match people who want to learn new home cooking styles, by finding a local chef to teach them how to cook authentic home made meals.
 
 <img src="https://i.imgur.com/QICZA8U.png" width="500">
 
@@ -55,7 +55,7 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 
 #### Initial brainstorming
 
-As a team we brainstormed what we envisioned the user journey would be - both as a student AND a teacher using the app
+As a team we brainstormed what we envisioned the user journey would be - both as a student AND a teacher (local chef) using the app
 
 <img src="https://i.imgur.com/aT6xbP9.jpg" width="500">
 
@@ -65,9 +65,9 @@ As a team we brainstormed what we envisioned the user journey would be - both as
 
 #### Mood board
 
-[Our mood board can be found on Figma here](https://www.figma.com/file/6vYWzMYMMSOeIv9CrzRpS3/Prototyping-in-Figma?node-id=0%3A1)
+[Click here for Figma Mood Board link](https://www.figma.com/file/6vYWzMYMMSOeIv9CrzRpS3/Prototyping-in-Figma?node-id=0%3A1)
 
-We collected ideas from apps that we've used, and collated together our design inspirations onto a mood board
+We drew inspiration from apps that we've used and collated them together onto a mood board
 
 <img src="https://i.imgur.com/GrEJpTw.jpg" width="500">
 
@@ -77,7 +77,7 @@ We collected ideas from apps that we've used, and collated together our design i
 
 #### Crazy 8's
 
-Each member had a quick 2min per frame to sketch out ideas of our app interface
+Each member had a quick 2min per frame to sketch out ideas of our app interface.  Here is one example:
 
 <img src="https://i.imgur.com/W0cEpw6.jpg" width="500">
 
@@ -101,7 +101,7 @@ These are componenets designed to be re-used throughout the app
 
 #### User journey sketching 
 
-Designing mobile first our user journey
+Designing mobile first for our user journey
 
 <img src="https://i.imgur.com/ow6CbYb.jpg" width="500">
 
@@ -115,7 +115,7 @@ Connecting up our user journey sketches ready for testing
 
 ### User Research
 
-[Full user research questionnaires and found here](https://airtable.com/tblIi5EMcQMdzs67M/viwdVxb4SMTv5Jahy?blocks=hide) 
+[Click here for AirTable full user research notes](https://airtable.com/tblIi5EMcQMdzs67M/viwdVxb4SMTv5Jahy?blocks=hide) 
 
 #### Summary of our findings
 
@@ -138,7 +138,7 @@ Connecting up our user journey sketches ready for testing
 
 #### User Stories
 
-[Our user stories can be found on our AirTable here](https://airtable.com/tblBbG7unqX5K1Uat/viwTMheFWsOCwQAqI?blocks=hide)
+[Click here for AirTable User Stories](https://airtable.com/tblBbG7unqX5K1Uat/viwTMheFWsOCwQAqI?blocks=hide)
 
 User stories are also broken down into build sprints as below, including point Estimates vs Actuals for each sprint: 
 
@@ -196,9 +196,9 @@ Our second build sprint is more aimed at post requests to our database and authe
 
 ### Things we've learnt
 
-- wesBos esLint is not easy to set up with create-react-app
-- a getRequest from AirTable reads empty rows as null and receives undefined when trying to request
-- .includes() is case sensitive
+- wesbos esLint is not so easy to set up with create-react-app
+- a getRequest from AirTable reads empty rows as null and receives undefined when making a getRequest
+- .includes() is cAsE sEnsItiVe
 
 ---
 
