@@ -6,7 +6,7 @@ import { ImageContainer } from "./css-components";
 const RecipeCard = ({ searchInput, lessonData }) => {
   if (lessonData === null) {
     return null;
-  }
+  } 
   return (
     <section className="recipes">
       {lessonData
@@ -31,8 +31,10 @@ const RecipeCard = ({ searchInput, lessonData }) => {
             </article>
           ))
         : null}
+      
     </section>
   );
-};
+}
+
 
 export default RecipeCard;
