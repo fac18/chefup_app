@@ -1,6 +1,6 @@
 import React, {useReducer} from 'react';
 import './createNewLesson.css';
-import { Form, Input, Button, Label } from "../CSSFormComponents.js";
+import { Form, Input, Label } from "../CSSFormComponents.js";
 
 // Link to how to useReducer for our future reference
 //https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935
@@ -69,9 +69,9 @@ const CreateNewLesson = () => {
         </div>
         <div>
           <p>What skill level do you believe this lesson would be suitable for?</p>
-          <Label for="beginner"><Input type="radio" name="skillLevel" id="beginner" defaultValue={skillLevel[0]} onChange={onChange}/></Label>
-          <Label for="intermediate"><Input type="radio" name="skillLevel" id="intermediate" defaultValue={skillLevel[1]} onChange={onChange}/></Label>
-          <Label for="advanced"><Input type="radio" name="skillLevel" id="advanced" defaultValue={skillLevel[2]} onChange={onChange}/></Label>
+          <Label for="beginner">Beginner<Input type="radio" name="skillLevel" id="beginner" defaultValue={skillLevel[0]} onChange={onChange}/></Label>
+          <Label for="intermediate">Intermediate<Input type="radio" name="skillLevel" id="intermediate" defaultValue={skillLevel[1]} onChange={onChange}/></Label>
+          <Label for="advanced">Advanced<Input type="radio" name="skillLevel" id="advanced" defaultValue={skillLevel[2]} onChange={onChange}/></Label>
         </div>
         <div>
             <p>Ingredients:</p>
