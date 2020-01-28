@@ -61,11 +61,11 @@ const CreateNewLesson = () => {
         </div>
         <div>
           <Label for="location">Location</Label>
-          <Input type="text" name="location" id="location" defaultValue={location} onChange={onChange}/>
+          <Input type="text" name="location" id="location" defaultValue={location} required onChange={onChange}/>
         </div>
         <div>
           <Label for="distanceToTravel">What distance are you willing to travel?</Label>
-          <Input type="text" name="distanceToTravel" id="distanceToTravel" defaultValue={distanceToTravel} onChange={onChange}/>
+          <Input type="text" name="distanceToTravel" id="distanceToTravel" defaultValue={distanceToTravel} required onChange={onChange}/>
         </div>
         <div>
           <p>What skill level do you believe this lesson would be suitable for?</p>
@@ -75,11 +75,11 @@ const CreateNewLesson = () => {
         </div>
         <div>
             <p>Ingredients:</p>
-          <Label><Input type="textarea" name="ingredients" defaultValue={ingredients} onChange={onChange}/></Label>
+          <Label><Input type="textarea" name="ingredients" defaultValue={ingredients} required onChange={onChange}/></Label>
         </div>        
         <div>
             <p>Description:</p>
-          <Label for="description"><Input type="textarea" name="description" id="description" defaultValue={description} onChange={onChange}/></Label>
+          <Label for="description"><Input type="textarea" name="description" id="description" required defaultValue={description} onChange={onChange}/></Label>
         </div>
         <div>
             <p>Tick all that apply:</p>
