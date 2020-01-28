@@ -6,7 +6,7 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
   // so that we can filter the search results as the user is typing
   return (
     <form>
-      <input
+      <Input
         type="text"
         id="search"
         name="search"
@@ -14,7 +14,7 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
         value={searchInput}
         placeholder="Search by your favourite cuisine, ingredients or current location..."
         onChange={event => setSearchInput(event.target.value)}
-      ></input>
+      ></Input>
       <button value="search">
         <SearchIcon />
       </button>

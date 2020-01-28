@@ -34,32 +34,25 @@ const Signup = () => {
     return (
       <form className="signup-form">
         <div>
-          <label>Username</label>
-          <input type="text" name="userName" placeholder="enter your username" defaultValue={username} required onChange={onChange}/>
+          <Label>Username<Input type="text" name="userName" placeholder="enter your username" defaultValue={username} required onChange={onChange}/></Label>
         </div>
         <div>
-          <label>First Name</label>
-          <input type="text" name="firstName" defaultValue={firstName} required onChange={onChange}/>
+          <Label>First Name<Input type="text" name="firstName" defaultValue={firstName} required onChange={onChange}/></Label>
         </div>
         <div>
-          <label>Last Name</label>
-          <input type="text" name="lastName" defaultValue={lastName} required onChange={onChange}/>
+          <Label>Last Name<Input type="text" name="lastName" defaultValue={lastName} required onChange={onChange}/></Label>
         </div>
         <div>
-          <label>Email Address</label>
-          <input type="email" name="email" defaultValue={email} required onChange={onChange}/>
+          <Label>Email Address<Input type="email" name="email" defaultValue={email} required onChange={onChange}/></Label>
         </div>
         <div>
-          <label>Password</label>
-          <input type="password" name="password1" defaultValue={password1} onChange={onChange}/>
+          <Label>Password<Input type="password" name="password1" defaultValue={password1} onChange={onChange}/></Label>
         </div>
         <div>
-          <label>Re-enter Password</label>
-          <input type="password" name="password2" defaultValue={password2} onChange={onChange}/>
+          <Label>Re-enter Password<Input type="password" name="password2" defaultValue={password2} onChange={onChange}/></Label>
         </div>
         <div>
-          <label>Location</label>
-          <input type="text" name="location" defaultValue={location} onChange={onChange}/>
+          <Label>Location<Input type="text" name="location" defaultValue={location} onChange={onChange}/></Label>
         </div>
         <button type="submit">Sign Up</button>
       </form>

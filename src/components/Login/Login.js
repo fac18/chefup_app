@@ -22,23 +22,23 @@ const Login = () => {
     return (
         <div>
             <form>
-                <input
+                <Input
                     type="text"
                     id="username"
                     name="username"
                     required
                     defaultValue={login.username}
                     placeholder="Enter your username here"
-                ></input>
-                <input
+                ></Input>
+                <Input
                     type="password"
                     id="password"
                     name="password"
                     required
                     defaultValue={login.password}
                     placeholder="Enter your password here"
-                ></input>
-                <input type="submit" value="Submit" onChange={event => setLogin(event.target.value)} />
+                ></Input>
+                <Input type="submit" value="Submit" onChange={event => setLogin(event.target.value)} />
             </form>
         </div>
     )
