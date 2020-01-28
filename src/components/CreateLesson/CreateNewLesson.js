@@ -14,7 +14,7 @@ const initialState = {
     distanceToTravel: '',
     skillLevel: '',
     ingredients: '',
-    description: ''
+    description: '',
     dietaryOptions: ''
 }
 
