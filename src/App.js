@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import "./App.css";
 import CreateLesson from "./pages/CreateLesson";
+import BookLessonPage from "./pages/BookLessonPage";
 import DisplayLesson from "./pages/DisplayLesson";
 import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
@@ -44,6 +45,7 @@ function App() {
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
         <Route path="/teach" render={() => (<CreateLesson />)} />
+        <Route path="/book" render={() => (<BookLessonPage />)} />
         <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
         <Route path="/ProfilePage" render={() => (<ProfilePage />)} />
         <Route path="/AboutPage" render={() => (<AboutPage />)} />
