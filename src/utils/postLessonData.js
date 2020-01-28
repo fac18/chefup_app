@@ -1,7 +1,7 @@
 const token = process.env.REACT_APP_TOKEN;
 const Airtable_api_key = process.env.AIRTABLE_API_KEY;
 var Airtable = require('airtable');
-var base = new Airtable({ apiKey: token  }).base("appnneO9UdlcBo0C3");
+// var base = new Airtable({ apiKey: token  }).base("appnneO9UdlcBo0C3");
 
 Airtable.configure({
   endpointUrl: 'https://api.airtable.com/v0/appnneO9UdlcBo0C3/Table%201',
