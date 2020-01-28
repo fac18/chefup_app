@@ -1,4 +1,5 @@
 # ChefUp
+
 A cooking app to match people who want to learn new home cooking styles in their own home, by finding a local chef to teach them how to cook authentic home made meals.
 
 <img src="https://i.imgur.com/QICZA8U.png" width="500">
@@ -22,6 +23,7 @@ A cooking app to match people who want to learn new home cooking styles in their
 ---
 
 ### Team
+
 Scrum Master - [Nikke](https://github.com/nikkesan) \
 DevOps - [Pat](https://github.com/pat-cki) \
 QA - [Maria](https://github.com/marialani) \
@@ -30,6 +32,7 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 ---
 
 ### Installation
+
 1. Clone repo `git@github.com:fac18/chefup_app.git`
 2. Install dependencies ```npm i```
 3. Set up `.env` file in the root directory.  Please request `REACT_APP_TOKEN` token from any team member listed above.
@@ -39,6 +42,7 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 ---
 
 ### Goals
+
 - Learn to cook
 - Share cultural recipes 
 - Eat healthier
@@ -52,6 +56,7 @@ UX Lead - [Alex](https://github.com/AlexandraOM)
 #### Initial brainstorming
 
 As a team we brainstormed what we envisioned the user journey would be - both as a student AND a teacher using the app
+
 <img src="https://i.imgur.com/aT6xbP9.jpg" width="500">
 
 ---
@@ -59,20 +64,27 @@ As a team we brainstormed what we envisioned the user journey would be - both as
 ### Design Week
 
 #### Mood board
-We collected ideas from apps that we've used, and collated together our design inspirations onto a mood board \
+
+[Our mood board can be found on Figma here](https://www.figma.com/file/6vYWzMYMMSOeIv9CrzRpS3/Prototyping-in-Figma?node-id=0%3A1)
+
+We collected ideas from apps that we've used, and collated together our design inspirations onto a mood board
+
 <img src="https://i.imgur.com/GrEJpTw.jpg" width="500">
 
-[Mood board can be found here](https://www.figma.com/file/6vYWzMYMMSOeIv9CrzRpS3/Prototyping-in-Figma?node-id=0%3A1)
-
 #### Rapid prototyping
+
 <img src="https://i.imgur.com/WPhLMTU.jpg" width="500">
 
 #### Crazy 8's
-Each member had a quick 2min per frame to sketch out ideas of our app interface \
+
+Each member had a quick 2min per frame to sketch out ideas of our app interface
+
 <img src="https://i.imgur.com/W0cEpw6.jpg" width="500">
 
 #### Merging team designs
-As a team we picked the best elements of all our designs \
+
+As a team we picked the best elements of all our designs
+
 <img src="https://i.imgur.com/RySmJxP.jpg" width="500">
 
 ---
@@ -82,15 +94,21 @@ As a team we picked the best elements of all our designs \
 [Click here for Figma Prototype link](https://www.figma.com/file/G2FduaeR6RYVzO6CPon4xU/Chef-Up?node-id=0%3A1)
 
 #### Fixed components
-These are componenets designed to be re-used throughout the app \
+
+These are componenets designed to be re-used throughout the app
+
 <img src="https://i.imgur.com/PFlLUfJ.png" width="200"><img src="https://i.imgur.com/JbBEuu3.png" width="500">
 
 #### User journey sketching 
-Designing mobile first our user journey \
+
+Designing mobile first our user journey
+
 <img src="https://i.imgur.com/ow6CbYb.jpg" width="500">
 
 #### Connected Prototypes
-Connecting up our user journey sketches ready for teseting \
+
+Connecting up our user journey sketches ready for testing
+
 <img src="https://i.imgur.com/gTGRSsl.png" width="500">
 
 ---
@@ -100,6 +118,7 @@ Connecting up our user journey sketches ready for teseting \
 [Full user research questionnaires and found here](https://airtable.com/tblIi5EMcQMdzs67M/viwdVxb4SMTv5Jahy?blocks=hide) 
 
 #### Summary of our findings
+
 - Friends and Family -> The internet to learn something new
 - Cooking preferences are based on friends and family (as well as impressing them)
 - Prefer home cooked food
@@ -107,6 +126,7 @@ Connecting up our user journey sketches ready for teseting \
 - Most have general -> specific dietary goals
 
 #### Potential problems and ongoing concerns
+
 - lack of trust
 - lack of skills and time
 - how to guide teachers to deliver good service
@@ -118,7 +138,7 @@ Connecting up our user journey sketches ready for teseting \
 
 #### User Stories
 
-[User stories captured on our AirTable here](https://airtable.com/tblBbG7unqX5K1Uat/viwTMheFWsOCwQAqI?blocks=hide)
+[Our user stories can be found on our AirTable here](https://airtable.com/tblBbG7unqX5K1Uat/viwTMheFWsOCwQAqI?blocks=hide)
 
 User stories are also broken down into build sprints as below, including point Estimates vs Actuals for each sprint: 
 
@@ -143,6 +163,8 @@ We prioritised our user stories into two sprints in order to achieve a MVP.  Our
 ---
 
 ### Second Build Sprint
+
+Our second build sprint is more aimed at post requests to our database and authentication:
 
 | No. | User stories  | Estimates     | Value | Actuals       | Value |
 | :-------------: | ------------- |-------------| :----:|-------------| :----:|
@@ -173,6 +195,7 @@ We prioritised our user stories into two sprints in order to achieve a MVP.  Our
 ---
 
 ### Things we've learnt
+
 - wesBos esLint is not easy to set up with create-react-app
 - a getRequest from AirTable reads empty rows as null and receives undefined when trying to request
 - .includes() is case sensitive
@@ -180,6 +203,7 @@ We prioritised our user stories into two sprints in order to achieve a MVP.  Our
 ---
 
 ### Tech Stack
+
 - React
 - Netlify
 - AirTable
