@@ -14,7 +14,7 @@
   --space-xxl: 4.236rem;
 }
 
-/* link class */
+/* link class  */
 a {
   font-family: Source Sans Pro;
   font-style: normal;
@@ -30,7 +30,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 160%; 
   /* or 26px */
   letter-spacing: 0.05em;
 }

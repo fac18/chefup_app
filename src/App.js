@@ -5,7 +5,7 @@ import {
   Switch
 } from "react-router-dom";
 import "./index.css";
-import "./App.css";
+import "./App.style";
 import CreateLesson from "./pages/CreateLesson";
 import BookLessonPage from "./pages/BookLessonPage";
 import DisplayLesson from "./pages/DisplayLesson";
@@ -17,6 +17,7 @@ import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
 import SignUpPage from "./pages/SignUpPage";
+// import { GlobalStyle } from "./App.style";
 
 function App() {
   const [lessonData, setLessonData] = React.useState(null);
@@ -42,6 +43,7 @@ function App() {
   }, []);
   return (
     <Router>
+      {/* <GlobalStyle /> */}
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
         <Route path="/teach" render={() => (<CreateLesson />)} />
