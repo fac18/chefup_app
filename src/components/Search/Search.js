@@ -1,11 +1,13 @@
 import React from "react";
 import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
 import "./search.css";
+import { Form, Input, Button } from "../CSSFormComponents.js";
+
 const SearchBar = ({ searchInput, setSearchInput }) => {
   // we will need to have an extra function here to do a get request to our database
   // so that we can filter the search results as the user is typing
   return (
-    <form>
+    <Form>
       <Input
         type="text"
         id="search"
@@ -15,10 +17,10 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
         placeholder="Search by your favourite cuisine, ingredients or current location..."
         onChange={event => setSearchInput(event.target.value)}
       ></Input>
-      <button value="search">
+      <Button value="search">
         <SearchIcon />
-      </button>
-    </form>
+      </Button>
+    </Form>
   );
 };
 
