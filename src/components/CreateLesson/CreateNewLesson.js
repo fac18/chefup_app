@@ -76,7 +76,7 @@ const CreateNewLesson = () => {
   return (
     <Form onSubmit={handleSubmit} className="lesson-form">
       <div>
-        <Label for="dishPhoto">Photo</Label>
+        <Label htmlFor="dishPhoto">Photo</Label>
         <Input
           type="file"
           name="dishPhoto"
@@ -87,7 +87,7 @@ const CreateNewLesson = () => {
         />
       </div>
       <div>
-        <Label for="dishName">What's the name of your dish?</Label>
+        <Label htmlFor="dishName">What's the name of your dish?</Label>
         <Input
           type="text"
           name="dishName"
@@ -98,7 +98,7 @@ const CreateNewLesson = () => {
         />
       </div>
       <div>
-        <label for="lessonLength">Lesson Length</label>
+        <label htmlFor="lessonLength">Lesson Length</label>
         <Input
           type="text"
           name="lessonLength"
@@ -111,7 +111,7 @@ const CreateNewLesson = () => {
       <div>
         <p>Select the date and time you are available to teach:</p>
         {/* create html where they can add more than 1 input time and date */}
-        <Label for="lessonDates">
+        <Label htmlFor="lessonDates">
           <Input
             type="date"
             name="lessonDates"
@@ -121,7 +121,7 @@ const CreateNewLesson = () => {
             onChange={onChange}
           />
         </Label>
-        <Label for="lessonHours">
+        <Label htmlFor="lessonHours">
           <Input
             type="time"
             name="lessonHours"
@@ -133,7 +133,7 @@ const CreateNewLesson = () => {
         </Label>
       </div>
       <div>
-        <Label for="location">Location</Label>
+        <Label htmlFor="location">Location</Label>
         <Input
           type="text"
           name="location"
@@ -144,7 +144,7 @@ const CreateNewLesson = () => {
         />
       </div>
       <div>
-        <Label for="distanceToTravel">
+        <Label htmlFor="distanceToTravel">
           What distance are you willing to travel?
         </Label>
         <Input
@@ -160,7 +160,7 @@ const CreateNewLesson = () => {
         <p>
           What skill level do you believe this lesson would be suitable for?
         </p>
-        <Label for="beginner">
+        <Label htmlFor="beginner">
           Beginner
           <Input
             type="radio"
@@ -170,7 +170,7 @@ const CreateNewLesson = () => {
             onChange={onChange}
           />
         </Label>
-        <Label for="intermediate">
+        <Label htmlFor="intermediate">
           Intermediate
           <Input
             type="radio"
@@ -180,7 +180,7 @@ const CreateNewLesson = () => {
             onChange={onChange}
           />
         </Label>
-        <Label for="advanced">
+        <Label htmlFor="advanced">
           Advanced
           <Input
             type="radio"
@@ -205,7 +205,7 @@ const CreateNewLesson = () => {
       </div>
       <div>
         <p>Description:</p>
-        <Label for="description">
+        <Label htmlFor="description">
           <Input
             type="textarea"
             name="description"
@@ -225,7 +225,7 @@ const CreateNewLesson = () => {
           value="Vegetarian"
           onChange={event => onSelect(event)}
         />
-        <Label for="vegetarian">Vegetarian</Label>
+        <Label htmlFor="vegetarian">Vegetarian</Label>
         <Input
           type="checkbox"
           id="vegan"
@@ -233,7 +233,7 @@ const CreateNewLesson = () => {
           value="Vegan"
           onChange={event => onSelect(event)}
         />
-        <Label for="vegan">Vegan</Label>
+        <Label htmlFor="vegan">Vegan</Label>
 
         <Input
           type="checkbox"
@@ -242,7 +242,7 @@ const CreateNewLesson = () => {
           value="Pescatarian"
           onChange={event => onSelect(event)}
         />
-        <Label for="pescatarian">Pescatarian</Label>
+        <Label htmlFor="pescatarian">Pescatarian</Label>
 
         <Input
           type="checkbox"
@@ -251,7 +251,7 @@ const CreateNewLesson = () => {
           value="Meat"
           onChange={event => onSelect(event)}
         />
-        <Label for="meat">Meat</Label>
+        <Label htmlFor="meat">Meat</Label>
 
         <Input
           type="checkbox"
@@ -260,7 +260,7 @@ const CreateNewLesson = () => {
           value="Organic"
           onChange={event => onSelect(event)}
         />
-        <Label for="organic">Organic</Label>
+        <Label htmlFor="organic">Organic</Label>
         <Input
           type="checkbox"
           id="dairyFree"
@@ -268,7 +268,7 @@ const CreateNewLesson = () => {
           value="Dairy-free"
           onChange={event => onSelect(event)}
         />
-        <Label for="dairyFree">Dairy Free</Label>
+        <Label htmlFor="dairyFree">Dairy Free</Label>
 
         <Input
           type="checkbox"
@@ -277,7 +277,7 @@ const CreateNewLesson = () => {
           value="gluten-free"
           onChange={event => onSelect(event)}
         />
-        <Label for="glutenFree">Gluten Free</Label>
+        <Label htmlFor="glutenFree">Gluten Free</Label>
 
         <Input
           type="checkbox"
@@ -286,7 +286,7 @@ const CreateNewLesson = () => {
           value="Halal"
           onChange={event => onSelect(event)}
         />
-        <Label for="halal">Halal</Label>
+        <Label htmlFor="halal">Halal</Label>
 
         <Input
           type="checkbox"
@@ -295,7 +295,7 @@ const CreateNewLesson = () => {
           value="Kosher"
           onChange={event => onSelect(event)}
         />
-        <Label for="kosher">Kosher</Label>
+        <Label htmlFor="kosher">Kosher</Label>
         <Input
           onChange={event => onSelect(event)}
           type="checkbox"
@@ -303,7 +303,7 @@ const CreateNewLesson = () => {
           name="dietaryOptions"
           value="paleo"
         />
-        <Label for="paleo">Paleo</Label>
+        <Label htmlFor="paleo">Paleo</Label>
       </div>
       <Label>
         <button type="submit">Sign Up</button>
