@@ -25,7 +25,8 @@ a {
   letter-spacing: 0.05em;
   list-style-type: none;
   text-decoration: none;
-  color: var(--white)
+  color: var(--white);
+  cursor: pointer;
 }
 
 a:hover {

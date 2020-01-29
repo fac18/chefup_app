@@ -1,14 +1,14 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const MainWrapper = styled.div`
-    text-align: center;
+  text-align: center;
 `;
 
 export const GlobalStyle = createGlobalStyle`
   body {
     font-family: Roboto Mono;
     margin: 0 0;
-  }`
+  }`;
 
 const H1 = styled.h1`
   font-style: normal;
@@ -23,7 +23,7 @@ const H2 = styled.h2`
   font-size: 18px;
   line-height: 140%;
   // or 25px;
-  `;
+`;
 
 const P = styled.p`
   font-family: Source Sans Pro;
@@ -42,11 +42,7 @@ const A = styled.a`
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0.05em;
+  color: ${props => props.textColour || "var(--primary-app-colour)"};
 `;
 
-export {
-  H1,
-  H2,
-  P,
-  A
-}
+export { H1, H2, P, A };
