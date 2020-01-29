@@ -13,6 +13,9 @@
   --space-xl: 2.618rem;
   --space-xxl: 4.236rem;
 }
+#root{
+  height: 100vh;
+}
 body {
   min-height: calc(100vh-80px);
 }

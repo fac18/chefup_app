@@ -1,5 +1,6 @@
 .bkg {
   background-color: #de561c;
+  min-height: 100vh;
 }
 
 .aboutus-header {
@@ -12,6 +13,7 @@
 .container {
   background-color: whitesmoke;
   max-width: 75%;
+  min-height: 100vh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
