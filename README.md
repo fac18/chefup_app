@@ -1,4 +1,4 @@
-# ChefUp
+# ChefUp [![Build Status](https://travis-ci.com/fac18/chefup_app.svg?branch=master)](https://travis-ci.com/fac18/chefup_app)
 
 A cooking app to match people who want to learn new home cooking styles, by finding a local chef to teach them how to cook authentic home made meals.
 
