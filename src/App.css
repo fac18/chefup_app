@@ -13,7 +13,9 @@
   --space-xl: 2.618rem;
   --space-xxl: 4.236rem;
 }
-
+body {
+  min-height: calc(100vh-80px);
+}
 /* link class */
 
 a {

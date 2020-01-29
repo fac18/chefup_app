@@ -18,6 +18,7 @@ const Button = styled.button`
   width: auto;
   max-width: 100px;
   justify-self: center;
+  pointer
 `;
 
 const Input = styled.input`
