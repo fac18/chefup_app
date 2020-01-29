@@ -2,6 +2,7 @@ import React from "react";
 import "./recipeCard.css";
 import { filterByInput } from "../../utils/filterByInput";
 import { ImageContainer } from "./css-components";
+import { H1 } from '../../App.style'
 
 const RecipeCard = ({ searchInput, lessonData }) => {
   if (lessonData === null) {
@@ -18,7 +19,7 @@ const RecipeCard = ({ searchInput, lessonData }) => {
                   alt={lesson.title}
                 ></ImageContainer>
 
-                <h1>{lesson.title}</h1>
+                <H1>{lesson.title}</H1>
                 <h2>
                   {lesson.teacher}, {lesson.location}, £{lesson.price}
                 </h2>
