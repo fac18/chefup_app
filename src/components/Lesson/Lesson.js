@@ -1,5 +1,6 @@
 import React from "react";
 import "./lesson.css";
+import { H1 } from '../../App.style'
 
 const Lesson = ({ result }) => {
   console.log(result);
@@ -11,7 +12,7 @@ const Lesson = ({ result }) => {
     <div className="recipes_lesson-details">
       {result ? (
         <div>
-          <h1>{result.title}</h1>
+          <H1>{result.title}</H1>
           <h2>
             {result.teacher}, {result.location}, £{result.price}
           </h2>
