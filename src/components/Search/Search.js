@@ -7,17 +7,17 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
   // we will need to have an extra function here to do a get request to our database
   // so that we can filter the search results as the user is typing
   return (
-    <Form className="searchForm">
+    <Form className="searchForm" inputDisplay="block">
       <Input
         type="text"
         id="search"
         name="search"
         required
         value={searchInput}
-        placeholder="Search by your favourite cuisine, ingredients or current location..."
+        placeholder="Search by your favourite cuisine..."
         onChange={event => setSearchInput(event.target.value)}
       ></Input>
-      <SearchIcon />
+      <SearchIcon className="searchIcon" />
       {/* <Button
         className="searchBtn"
         value="search"

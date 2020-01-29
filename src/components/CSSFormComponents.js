@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Form = styled.form`
-  display: grid;
+  display: ${props => props.inputDisplay || "grid"};
 `;
 
 const Button = styled.button`

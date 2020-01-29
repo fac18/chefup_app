@@ -1,14 +1,18 @@
 #searchForm {
-  display: block;
+  display: flex;
+  justify-content: column;
 }
 
 #search {
-  padding: var(--space-m);
+  padding: var(--space-s);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  border: none;
+  width: 250px;
 }
-#search::placeholder {
-  white-space: pre-line;
-  position: relative;
-  top: -10px;
+
+.searchIcon {
+  margin-left: 20px;
 }
 
 /* button {
