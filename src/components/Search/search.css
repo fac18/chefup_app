@@ -1,21 +1,42 @@
-button {
-  background-color: var(--primary-app-colour);
-  padding-left: var(--space-m);
-  padding-right: var(--space-m);
+#searchForm {
+  display: block;
 }
+
+#search {
+  padding: var(--space-m);
+}
+#search::placeholder {
+  white-space: pre-line;
+  position: relative;
+  top: -10px;
+}
+
+/* button {
+  background-color: var(--secondary-app-colour); */
+
+/* padding-left: var(--space-m);
+  padding-right: var(--space-m); */
+
+/* color: var(--secondary-app-colour);
+} */
+
+/* 
 form {
   display: flex;
   justify-content: center;
   margin: var(--space-m);
 }
+
 input {
   border-color: var(--grey);
-  border-width: thin;
-  width: 40vmax;
-  font-family: Source Sans Pro;
+  border-width: thin; */
+
+/* width: 40vmax; */
+
+/* font-family: Source Sans Pro;
   font-size: 16px;
   padding: var(--space-xs);
   height: 5vh;
   margin: var(--space-s);
   background-color: var(--white);
-}
+} */

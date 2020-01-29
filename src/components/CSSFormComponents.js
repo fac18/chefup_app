@@ -5,10 +5,15 @@ const Form = styled.form`
 `;
 
 const Button = styled.button`
-  background-color: var(--primary-app-colour);
-  padding: var(--space-m);
+  // background-color: var(--primary-app-colour);
+  // padding: var(--space-m);
+  padding: ${props =>
+    props.inputPadding ||
+    "var(--space-m)"}; // props feed into Search.js - allows us to override CSSComponents on special occasions
+  background-color: ${props => props.inputColor || "var(--primary-app-colour)"};
   font-family: Source Sans Pro;
   font-size: 16px;
+  width: auto;
   max-width: 100px;
 `;
 
