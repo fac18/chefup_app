@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import "./App.style";
+import "./App.css";
 import CreateLesson from "./pages/CreateLesson";
 import BookLessonPage from "./pages/BookLessonPage";
 import DisplayLesson from "./pages/DisplayLesson";
