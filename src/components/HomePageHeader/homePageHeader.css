@@ -4,9 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0.2rem 0;
   color: var(--white);
-  min-height: 40vh;
 }
 
 .homePageNav {
