@@ -22,7 +22,6 @@ const RecipeCard = ({ searchInput, lessonData }) => {
 
                 <H1>{lesson.title}</H1>
                 <h2>
-                  {/* <img src={lesson.chef_image} alt="chef avatar" /> */}
                   {lesson.teacher}, {lesson.location}, £{lesson.price}
                 </h2>
 
