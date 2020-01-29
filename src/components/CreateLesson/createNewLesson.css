@@ -3,3 +3,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
 }
+
+.image-link {
+    margin-top: 0;
+    font-size: 0.7em;
+}

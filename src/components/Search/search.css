@@ -11,6 +11,12 @@
   width: 250px;
 }
 
+/* form {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-m);
+} */
+
 .searchIcon {
   margin-left: 20px;
 }
