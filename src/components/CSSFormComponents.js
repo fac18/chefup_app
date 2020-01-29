@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const Form = styled.form`
   display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 25% 100px auto;
 `;
 
 const Button = styled.button`
@@ -10,6 +12,7 @@ const Button = styled.button`
   font-family: Source Sans Pro;
   font-size: 16px;
   max-width: 100px;
+  justify-self: center;
 `;
 
 const Input = styled.input`
@@ -24,6 +27,7 @@ const Input = styled.input`
   /* margin: var(--space-s); */
   background-color: var(--white);
   text-align: left;
+  justify-self:left;
 `;
 
 const Label = styled.label`
@@ -31,6 +35,7 @@ const Label = styled.label`
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
+  justify-self: right;
 `;
 
 export { Form, Input, Button, Label };
