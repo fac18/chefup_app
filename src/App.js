@@ -11,7 +11,7 @@ import BookLessonPage from "./pages/BookLessonPage";
 import DisplayLesson from "./pages/DisplayLesson";
 import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
-import AboutPage from "./pages/AboutPage";
+import About from "./pages/AboutPage";
 import Login from "./pages/LoginPage";
 import "typeface-roboto";
 import "typeface-roboto-mono";
@@ -48,7 +48,7 @@ function App() {
         <Route path="/book" render={() => (<BookLessonPage />)} />
         <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
         <Route path="/ProfilePage" render={() => (<ProfilePage />)} />
-        <Route path="/AboutPage" render={() => (<AboutPage />)} />
+        <Route path="/About" render={() => (<About />)} />
         <Route path="/Login" render={() => (<Login />)} />
         <Route path='/SignUp' render={() => (<SignUpPage />)} />
       </Switch>

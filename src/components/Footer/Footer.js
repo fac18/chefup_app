@@ -14,14 +14,14 @@ const Footer = () => {
                         <Link to="/"><HomeIcon /></Link>
                     </li>
                     <li>
-                        <Link to="/CreateLesson"><TeachIcon /></Link>
+                        <Link to="/teach"><TeachIcon /></Link>
                     </li>
                     <li>
-                        <Link to="/"><LearnIcon /></Link>
+                        <Link to="/book"><LearnIcon /></Link>
                     </li>
-                    {/* <li>
-                        <Link to="/ProfilePage"><ProfilePageIcon /></Link>
-                    </li> */}
+                    <li>
+                        <Link to="/ProfilePage">Profile Page Icon</Link>
+                    </li>
                 </ul>
             </footer>
     )
