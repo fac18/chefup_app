@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as SearchIcon } from "../../icons/searchIconWhite.svg";
-import { Form, Input, Button } from "../CSSFormComponents";
+import { Form, Input } from "../CSSFormComponents";
 import "./search.css";
 
 const SearchBar = ({ searchInput, setSearchInput }) => {
@@ -14,10 +14,9 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
         name="search"
         required
         value={searchInput}
-        placeholder="Search by your favourite cuisine..."
+        placeholder="&#x1F50D; Search by your favourite cuisine..."
         onChange={event => setSearchInput(event.target.value)}
       ></Input>
-      <SearchIcon className="searchIcon" />
       {/* <Button
         className="searchBtn"
         value="search"

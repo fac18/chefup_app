@@ -1,7 +1,8 @@
 .searchForm {
   display: flex;
   flex-direction: row;
-  /* justify-content: column; */
+  align-items: center;
+  margin: 0 auto;
 }
 
 #search {
@@ -9,7 +10,7 @@
   margin-bottom: 30px;
   border-radius: 1rem;
   border: none;
-  width: 250px;
+  /* width: 250px; */
 }
 
 /* form {
@@ -31,7 +32,7 @@
 /* color: var(--secondary-app-colour);
 } */
 
-/* 
+/*
 form {
   display: flex;
   justify-content: center;

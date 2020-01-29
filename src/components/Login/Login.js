@@ -22,7 +22,7 @@ const Login = () => {
 
     return (
         <div>
-            <form>
+            <form className="formflex">
                 <Label>
                 <Input
                     type="text"

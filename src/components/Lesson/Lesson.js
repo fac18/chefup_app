@@ -1,17 +1,14 @@
 import React from "react";
 import "./lesson.css";
-import { H1 } from '../../App.style'
-
+import { ImageContainer } from "../RecipeCard/css-components";
+import { H1 } from "../../App.style";
 const Lesson = ({ result }) => {
   console.log(result);
-  // <ImageContainer
-  //   imageUrl={result.image_url}
-  //   alt={result.title}
-  // ></ImageContainer>
+
   return (
-    <div className="recipes_lesson-details">
+    <div>
       {result ? (
-        <div>
+        <div className="lessonPage_lesson-details">
           <H1>{result.title}</H1>
           <h2>
             {result.teacher}, {result.location}, £{result.price}
@@ -20,7 +17,11 @@ const Lesson = ({ result }) => {
           <p>{result.time}</p>
           <p>{result.duration}</p>
           <p>{result.ingredients}</p>
-          <a href={result.lessonUrl}>LEARN MORE</a>
+          <ImageContainer
+            imageUrl={result.image_url}
+            alt={result.title}
+            height="50vh"
+          ></ImageContainer>
         </div>
       ) : null}
     </div>
