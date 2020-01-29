@@ -18,7 +18,6 @@ import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
 import SignUpPage from "./pages/SignUpPage";
-// import { GlobalStyle } from "./App.style";
 
 function App() {
   const [lessonData, setLessonData] = React.useState(null);
@@ -44,7 +43,6 @@ function App() {
   }, []);
   return (
     <Router>
-      {/* <GlobalStyle /> */}
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
         <Route path="/teach" render={() => (<CreateLesson />)} />

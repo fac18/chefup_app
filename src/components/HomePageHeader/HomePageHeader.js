@@ -10,17 +10,17 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
       <nav>
         <ul className="homePageNav">
           <li>
-            <Link to="/About">About Us</Link>
+            <Link className="list" to="/About">About Us</Link>
           </li>
           <li>
-            <Link to="/Login">Login</Link>
+            <Link className="list" to="/Login">Login</Link>
           </li>
           <li>
-            <Link to="/SignUp">Sign Up</Link>
+            <Link className="signUp" to="/SignUp">Sign Up</Link>
           </li>
         </ul>
       </nav>
-      <HomePageLogo />
+      <div ><HomePageLogo className="logo"/></div>
       <p>Find a local chef and level up your cooking skills!</p>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
     </div>
