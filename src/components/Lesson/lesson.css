@@ -1,0 +1,5 @@
+.lessonPage_lesson-details {
+  padding: var(--space-m);
+  display: flex;
+  flex-direction: column;
+}

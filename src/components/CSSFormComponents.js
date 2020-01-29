@@ -20,7 +20,7 @@ const Input = styled.input`
   font-family: Source Sans Pro;
   font-size: 16px;
   /* padding: var(--space-xs); */
-  height: var(--space-l);
+  height: ${props => props.height || "var(--space-l)"};
   /* margin: var(--space-s); */
   background-color: var(--white);
   text-align: left;

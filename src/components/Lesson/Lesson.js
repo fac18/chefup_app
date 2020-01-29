@@ -1,16 +1,13 @@
 import React from "react";
 import "./lesson.css";
-
+import { ImageContainer } from "../RecipeCard/css-components";
 const Lesson = ({ result }) => {
   console.log(result);
-  // <ImageContainer
-  //   imageUrl={result.image_url}
-  //   alt={result.title}
-  // ></ImageContainer>
+
   return (
-    <div className="recipes_lesson-details">
+    <div>
       {result ? (
-        <div>
+        <div className="lessonPage_lesson-details">
           <h1>{result.title}</h1>
           <h2>
             {result.teacher}, {result.location}, £{result.price}
@@ -19,7 +16,11 @@ const Lesson = ({ result }) => {
           <p>{result.time}</p>
           <p>{result.duration}</p>
           <p>{result.ingredients}</p>
-          <a href={result.lessonUrl}>LEARN MORE</a>
+          <ImageContainer
+            imageUrl={result.image_url}
+            alt={result.title}
+            height="50vh"
+          ></ImageContainer>
         </div>
       ) : null}
     </div>
