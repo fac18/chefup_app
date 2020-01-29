@@ -11,15 +11,23 @@ article {
   padding: var(--space-s);
   margin: var(--space-s);
 }
+
 .recipes_lesson-details {
   border-radius: 10px;
+  box-sizing: content-box;
   border-color: var(--grey);
-  border-width: 10px;
+  /* border-width: 8px; */
   width: 80vw;
   max-width: 300px;
   background-color: var(--white);
   padding: var(--space-m);
-  margin: var(--space-s);
+  transition: 0.2s all ease-in-out;
+  /* margin: var(--space-s); */
+}
+
+.recipes_lesson-details:hover {
+  box-shadow: 0px 4px 0px 0px #dc5729;
+
 }
 
 .recipe_image-container {
@@ -32,4 +40,8 @@ article {
   max-height: 250px;
   width: auto;
   max-width: 280px;
+}
+
+a.card-link {
+  color: black;
 }
