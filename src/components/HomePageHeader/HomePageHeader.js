@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 const HomePageHeader = () => {
     return (
         <div className='homePageHeader'>
-            <nav>
-                <ul className='nav'>
+            <nav >
+                <ul className='homePageNav'>
                     <li>
                         <Link to="/About">About Us</Link>
                     </li>
@@ -22,7 +22,7 @@ const HomePageHeader = () => {
             </nav>
             <HomePageLogo />
             <p>Find a local chef and level up your cooking skills!</p>
-        </div>
+        </div >
     )
 }
 

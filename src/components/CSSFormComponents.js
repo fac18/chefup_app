@@ -15,8 +15,8 @@ const Button = styled.button`
 const Input = styled.input`
   border-color: var(--grey);
   border-width: thin;
-  width: 40vw;
-  max-width: 400px
+  width: 80vw;
+  max-width: 400px;
   font-family: Source Sans Pro;
   font-size: 16px;
   /* padding: var(--space-xs); */
