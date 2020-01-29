@@ -2,14 +2,15 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import Login from "../components/Login/Login";
+import './pages_css/aboutpage.css';
 
 const LoginPage = () => {
   return (
-    <div>
-      <body>
+    <div className="bkg">
         <Header />
+        <div className="container">
         <Login />
-      </body>
+        </div>
       <Footer />
     </div>
   );

@@ -6,5 +6,6 @@ cache:
     - node_modules
 script:
   - npm run coverage
-  env:
-    - REACT_APP_TOKEN
+env:
+  - process.env.REACT_APP_TOKEN
+  - token = process.env.REACT_APP_TOKEN

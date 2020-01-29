@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 const Form = styled.form`
   // display: ${props => props.inputDisplay || "grid"};
+  // display: ${props => props.inputDisplay || "flex"};
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 100%;
   margin: var(--space-s);
   padding: var(--space-s);
   /* align-items: center; */
-  display: "flex" || ${props => props.inputDisplay};
 `;
 
 // props feed into Search.js - allows us to override CSSComponents on special occasions
