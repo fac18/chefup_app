@@ -26,7 +26,9 @@ const postLessonData = ({
   base("Table 1").create([
     {
       fields: {
+        // lesson_id: "1",
         lesson_name: dishName,
+        chef_image: "https://airtable.com/tbl5vlOrQjCPQ5Wrl/viwbNivzUaYOsHqfU/recZurudDogIPnylo",
         teacher: "test",
         location: location,
         price: 25,

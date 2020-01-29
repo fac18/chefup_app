@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 const Form = styled.form`
-  display: grid;
+  /* display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 25% 100px auto;
+  grid-template-rows: 25% 100px auto; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 `;
 
 const Button = styled.button`
