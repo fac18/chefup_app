@@ -8,11 +8,13 @@ const Home = ({ lessonData }) => {
 
   return (
     <div>
-      <HomePageHeader
-        searchInput={searchInput}
-        setSearchInput={setSearchInput}
-      />
-      <RecipeCard searchInput={searchInput} lessonData={lessonData} />
+      <body>
+        <HomePageHeader
+          searchInput={searchInput}
+          setSearchInput={setSearchInput}
+        />
+        <RecipeCard searchInput={searchInput} lessonData={lessonData} />
+      </body>
       <Footer />
     </div>
   );

@@ -1,36 +1,34 @@
 import React from "react";
-import { Form, Label } from "../CSSFormComponents.js";
+import { Form, Label, Input } from "../CSSFormComponents.js";
 // import { Link } from 'react-router-dom';
-
 
 const BookLessonForm = () => {
   const [form, setForm] = React.useState(true);
-  
-    function handleSubmit(e) {
-      e.preventDefault();
-      setForm(false)
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setForm(false);
   }
 
-  if(form) {
+  if (form) {
     return (
       <Form onSubmit={handleSubmit}>
+        <Label>Enter your Fullname here:</Label>
+        <Input type="text" placeholder="Ms. Example"></Input>
+        <Label>Enter your email:</Label>
+        <Input type="text" placeholder="you@example.com"></Input>
+        <Label>Do you agree to pay your teacher in cash upon arrival?</Label>
+        <Label>Yes</Label>
+        <Input type="radio" name="payInCash"></Input>
+        <Label>No</Label>
+        <Input type="radio" name="payInCash"></Input>
         <Label>
-          Enter your Fullname here:
-        <input type="text" placeholder="Ms. Example"></input>
+          Please confirm you have reviewed the details of your chosen lesson by
+          ticking the box below
         </Label>
-        <Label>
-          Enter your email:
-        <input type="text" placeholder="you@example.com"></input>
-        </Label>      
-        <p>Do you agree to pay your teacher in cash upon arrival?</p>
-        <Label>Yes<input type="radio" name="payInCash"></input></Label>
-        <Label>No<input type="radio" name="payInCash"></input></Label>
-        <p>Please confirm you have reviewed the details of your chosen lesson</p>
-        <Label>Yes<input type="checkbox" required></input></Label>
-        <Label>
-          You may enter a message to your chosen teacher here:
-        <input type="submit" />
-        </Label>      
+        <Input type="checkbox" required></Input>
+        <Label>You may enter a message to your chosen teacher here:</Label>
+        <Input type="textarea" height="200px" />
       </Form>
     );
   }
@@ -38,7 +36,7 @@ const BookLessonForm = () => {
     <React.Fragment>
       <p>Booking received</p>
     </React.Fragment>
-  )
-  };
+  );
+};
 
 export default BookLessonForm;

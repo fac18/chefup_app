@@ -8,7 +8,7 @@
   margin-bottom: 30px;
   border-radius: 5px;
   border: none;
-  width: 250px;
+  /* width: 250px; */
 }
 
 /* form {
@@ -30,7 +30,7 @@
 /* color: var(--secondary-app-colour);
 } */
 
-/* 
+/*
 form {
   display: flex;
   justify-content: center;
