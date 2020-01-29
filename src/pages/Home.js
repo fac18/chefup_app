@@ -8,8 +8,7 @@ const Home = ({ lessonData }) => {
 
   return (
     <div>
-      <HomePageHeader />
-      <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+      <HomePageHeader searchInput={searchInput} setSearchInput={setSearchInput} />
       <RecipeCard searchInput={searchInput} lessonData={lessonData} />
     </div>
   );

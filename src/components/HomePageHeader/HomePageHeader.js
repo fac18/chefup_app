@@ -2,9 +2,10 @@ import React from 'react';
 import './homePageHeader.css';
 import { ReactComponent as HomePageLogo } from '../../icons/logoImageWhite.svg';
 import { Link } from 'react-router-dom'
+import Search from "../Search/Search";
 
 
-const HomePageHeader = () => {
+const HomePageHeader = ({ searchInput, setSearchInput }) => {
     return (
         <div className='homePageHeader'>
             <nav >
@@ -22,6 +23,7 @@ const HomePageHeader = () => {
             </nav>
             <HomePageLogo />
             <p>Find a local chef and level up your cooking skills!</p>
+            <Search searchInput={searchInput} setSearchInput={setSearchInput} />
         </div >
     )
 }
