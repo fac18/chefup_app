@@ -1,22 +1,38 @@
 .homePageHeader {
-    background-color: var(--primary-app-colour);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem 0;
-    color: var(--white);
+  background-color: var(--primary-app-colour);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0;
+  color: var(--white);
+  height: 40vh;
 }
 
-.nav ul {
-    
+.homePageNav {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-around;
+  width: 100vw;
+  padding: 0;
+  margin: var(--space-xs) var(--space-s) var(--space-xl) var(--space-s);
 }
 
-ul, li > a {
+nav > ul > li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  text-align: center;
+}
+
+/* ul, li > a {
     list-style-type: none;
     text-decoration: none;
     color: var(--white);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
+} */
