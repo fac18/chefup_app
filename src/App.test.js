@@ -12,7 +12,7 @@ test('full app rendering/navigating', () => {
       <App />
     </Router>
   )
-  expect(container.textContent).toMatch('About')
+  expect(container.textContent).toMatch('ABOUT USLOGINSIGN UPlogoImageWhite.svgFind a local chef and level up your cooking skills!searchIconWhite.svg')
 
   fireEvent.click(getByText(/about/i))
 
