@@ -1,3 +1,7 @@
+.bkg {
+  background-color: #de561c;
+}
+
 .aboutus-header {
   font-size: 1.8em;
   margin-bottom: 0;
@@ -6,9 +10,12 @@
 }
 
 .aboutus-container {
+  background-color: whitesmoke;
+  max-width: 75%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 3em 0 3em;
+  padding: 0 3em 3rem 3em;
   justify-content: center;
   align-items: center;
 }

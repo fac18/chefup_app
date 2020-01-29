@@ -9,7 +9,7 @@ import "./pages_css/aboutpage.css"
 
 const AboutPage = () => {
     return (
-        <div >
+        <div className="bkg" >
             <Header />
             <div className="aboutus-container">
             <h3 className="aboutus-header">All about us</h3>
