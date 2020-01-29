@@ -17,5 +17,5 @@ test("full app rendering/navigating", () => {
   fireEvent.click(getByText(/about/i));
 
   // check that the content changed to the new page
-  expect(container.textContent).toMatch(/about/i);
+  expect(container.textContent).toMatch(/about us/i);
 });
