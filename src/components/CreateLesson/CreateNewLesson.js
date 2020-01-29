@@ -13,10 +13,10 @@ const initialState = {
   lessonHours: "",
   location: "",
   distanceToTravel: "",
-  skillLevel: "",
+  // skillLevel: "",
   ingredients: "",
-  description: "",
-  dietaryOptions: []
+  description: ""
+  // dietaryOptions: []
 };
 
 function reducer(state, { field, value }) {
@@ -48,39 +48,28 @@ const CreateNewLesson = () => {
     lessonHours,
     location,
     distanceToTravel,
-    skillLevel,
+    // skillLevel,
     ingredients,
-    description,
-    dietaryOptions
+    description
+    // dietaryOptions
   } = state;
 
+  //with more time we would want to include tags for dietaryOptions
   // this is not a react type solution - we are pushing each selected value to an array
-  // const skillSelect = event => {
+  // const onSelect = event => {
   //   console.log(event.target.value);
-   
-  //     skillLevel = event.target.value;
-    
-  // }
-  
-  const onSelect = event => {
-    console.log(event.target.value);
-
-    if (dietaryOptions.includes(event.target.value)) {
-      console.log(dietaryOptions.indexOf(event.target.value));
-      dietaryOptions.splice(dietaryOptions.indexOf(event.target.value), 1);
-      console.log("remove this option");
-    } else {
-      dietaryOptions.push(event.target.value);
-    }
-    console.log('dietary options array', { dietaryOptions });
-    console.log('state ', state);
-  };
-  // console.log({ dietaryOptions });
+  //
+  //   if (dietaryOptions.includes(event.target.value)) {
+  //     dietaryOptions.splice(dietaryOptions.indexOf(event.target.value), 1);
+  //   } else {
+  //     dietaryOptions.push(event.target.value);
+  //   }
+  // };
   const handleSubmit = event => {
     event.preventDefault();
     alert("congratulations, you created a lesson");
     postLessonData(state);
-    console.log('state handleSumbit', state);
+    console.log("state handleSumbit", state);
   };
 
   return (
@@ -95,7 +84,12 @@ const CreateNewLesson = () => {
           required
           onChange={onChange}
         />
-        <p className="image-link">Photo URLs: please provide a link to a photo (or avatar or other graphical representation of you) that is hosted online. You can use a service like imgur to upload a picture if needed - make sure you include .jpg at the end of the filename</p>
+        <p className="image-link">
+          Photo URLs: please provide a link to a photo (or avatar or other
+          graphical representation of you) that is hosted online. You can use a
+          service like imgur to upload a picture if needed - make sure you
+          include .jpg at the end of the filename
+        </p>
       </div>
       <div>
         <Label htmlFor="dishName">What's the name of your dish?</Label>
