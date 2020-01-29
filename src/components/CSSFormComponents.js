@@ -25,8 +25,12 @@ const Button = styled.button`
 `;
 
 const Input = styled.input`
-  border-color: var(--grey);
+  border-color: var(--secondary-app-colour);
   border-width: thin;
+  border-radius: 5px;
+  border: none;
+  margin: var(--space-s);
+  padding: var(--space-s);
   width: 80vw;
   max-width: 400px;
   font-family: Source Sans Pro;
@@ -36,7 +40,7 @@ const Input = styled.input`
   /* margin: var(--space-s); */
   background-color: var(--white);
   text-align: left;
-  justify-self:left;
+  justify-self: left;
 `;
 
 const Label = styled.label`
