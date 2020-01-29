@@ -1,5 +1,5 @@
 .homePageHeader {
-  background-color: var(--primary-app-colour);
+  background: var(--primary-app-colour) url(https://i.imgur.com/zphWVpR.png) center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,6 +16,10 @@
   width: 100vw;
   padding-top: 3rem ;
   margin: var(--space-xs) var(--space-s) var(--space-xl) var(--space-s);
+}
+
+.wrapper {
+  background-color: rgba(219, 84, 26, 0.7);
 }
 
 nav > ul > li {

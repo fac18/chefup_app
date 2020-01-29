@@ -7,7 +7,7 @@ const Form = styled.form`
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  display: ${props => props.inputDisplay || "grid"};
+  display: ${props => props.inputDisplay || "flex"};
 `;
 
 const Button = styled.button`

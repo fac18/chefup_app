@@ -7,22 +7,24 @@ import Search from "../Search/Search";
 const HomePageHeader = ({ searchInput, setSearchInput }) => {
   return (
     <div className="homePageHeader">
+      <div className="wrapper">
       <nav>
         <ul className="homePageNav">
           <li>
-            <Link className="list" to="/About">About Us</Link>
+            <Link className="list" to="/About">ABOUT US</Link>
           </li>
           <li>
-            <Link className="list" to="/Login">Login</Link>
+            <Link className="list" to="/Login">LOGIN</Link>
           </li>
           <li>
-            <Link className="signUp" to="/SignUp">Sign Up</Link>
+            <Link className="signUp" to="/SignUp">SIGN UP</Link>
           </li>
         </ul>
       </nav>
       <div ><HomePageLogo className="logo"/></div>
       <p>Find a local chef and level up your cooking skills!</p>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+      </div>
     </div>
   );
 };
