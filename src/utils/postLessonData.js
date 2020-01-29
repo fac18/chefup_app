@@ -1,5 +1,4 @@
 const token = process.env.REACT_APP_TOKEN;
-// const Airtable_api_key = process.env.AIRTABLE_API_KEY;
 var Airtable = require("airtable");
 var base = new Airtable({ apiKey: token }).base("appnneO9UdlcBo0C3");
 
@@ -28,7 +27,8 @@ const postLessonData = ({
       fields: {
         // lesson_id: "1",
         lesson_name: dishName,
-        chef_image: "https://airtable.com/tbl5vlOrQjCPQ5Wrl/viwbNivzUaYOsHqfU/recZurudDogIPnylo",
+        chef_image:
+          "https://airtable.com/tbl5vlOrQjCPQ5Wrl/viwbNivzUaYOsHqfU/recZurudDogIPnylo",
         teacher: "test",
         location: location,
         price: 25,
