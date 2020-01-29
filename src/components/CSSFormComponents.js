@@ -29,7 +29,7 @@ const Input = styled.input`
   margin-top: var(--space-xs) var(--space-xs) var(--space-xs) 0;
 
   padding: var(--space-xs);
-  width: 90vw;
+  width: 80vw;
   max-width: 400px;
   font-family: Source Sans Pro;
   font-size: 16px;
