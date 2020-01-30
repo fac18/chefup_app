@@ -1,7 +1,7 @@
 .bkg {
   background: url(https://i.imgur.com/zphWVpR.png);
-  background-repeat:no-repeat;
-    background-size:cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -14,7 +14,8 @@
 
 .container {
   background-color: whitesmoke;
-  max-width: 75%;
+  opacity: 0.95;
+  max-width: 85%;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -26,8 +27,9 @@
 }
 
 .introductory-paragraph {
-  text-align: left;
+  text-align: center;
   font-size: 1.1rem;
+  margin-bottom: 1em;
 }
 
 .diamond-paragraph {
@@ -41,4 +43,14 @@
 
 .none {
   display: none;
+h3 {
+  margin-bottom: 1em;
+}
+
+.guidelines {
+  margin-bottom: 5em;
+}
+
+.guidelines li {
+  margin-bottom: 1em;
 }
