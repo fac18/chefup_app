@@ -12,6 +12,10 @@ article {
   margin: var(--space-s);
 }
 
+.description {
+  display: none;
+}
+
 .recipes {
   padding-bottom: 15%;
 }
@@ -48,4 +52,22 @@ article {
 
 a.card-link {
   color: black;
+}
+
+@media screen and (min-width: 840px) {
+  .recipes_recipeCard {
+    min-width: 45%;
+    width: 40%;
+  }
+
+  .recipes_lesson-details {
+    max-width: inherit;
+    width: 100%;
+    }
+
+  .description {
+    display: block;
+    padding-top: 1rem;
+    font-style: italic;
+  }
 }

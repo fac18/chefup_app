@@ -11,11 +11,14 @@
     position:fixed;
     background: white;
     max-width: 75%;
-    border-radius: 3rem;
+    border-radius: 0.8rem;
     height: auto;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    color: black;
+    padding-top: 3rem;
+    text-align: center;
   }
   
   .inputs {
@@ -28,6 +31,9 @@
   }
   .color {
     background-color: #fda831 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin-bottom: 2rem;
   }
 
   .formFlex {

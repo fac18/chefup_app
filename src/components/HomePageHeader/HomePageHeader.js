@@ -34,7 +34,7 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
         </ul>
       </nav>
       <div ><HomePageLogo className="logo"/></div>
-      <p>---- Find a local chef and level up your cooking skills! ----</p>
+      <p className="tagLine"> Find a local chef and level up your cooking skills!</p>
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
       </div>
     </div>

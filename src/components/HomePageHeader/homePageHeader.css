@@ -22,6 +22,12 @@
   box-shadow: 4rem 8rem 8rem 4rem rgba(219, 84, 26, 0.7) inset;  
 }
 
+.tagLine {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 nav > ul > li {
   list-style-type: none;
   text-decoration: none;
@@ -48,7 +54,6 @@ nav > ul > li {
 p {
   margin: 0;
   text-align: center;
-  padding-bottom: 1.5rem;
   font-size: 1rem;
 }
 

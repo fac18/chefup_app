@@ -1,5 +1,7 @@
 .bkg {
-  background-color: #de561c;
+  background: url(https://i.imgur.com/zphWVpR.png);
+  background-repeat:no-repeat;
+    background-size:cover;
   min-height: 100vh;
 }
 

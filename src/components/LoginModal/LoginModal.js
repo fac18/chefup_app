@@ -2,6 +2,8 @@ import React from 'react'
 import { Button } from '../CSSFormComponents';
 import './loginmodal.css';
 import { Input, Label } from "../CSSFormComponents";
+import { ReactComponent as Logo } from "../../icons/logoTextBlack.svg";
+
 
 const LoginModal = ({ handleClose, show }) => {
     const [login, setLogin] = React.useState({
@@ -19,6 +21,8 @@ const LoginModal = ({ handleClose, show }) => {
       <div className={showHideClassName}>
           <section className="modal-main">
           <div>
+           
+            <h2>Welcome to  <Logo /></h2>
             <form className="formFlex">
                 <Label>
                 <Input className="inputs"
@@ -27,7 +31,7 @@ const LoginModal = ({ handleClose, show }) => {
                     name="username"
                     required
                     defaultValue={login.username}
-                    placeholder="Enter your username here"
+                    placeholder="'Username"
                 ></Input>
                 </Label>
                 <Label>
@@ -37,11 +41,11 @@ const LoginModal = ({ handleClose, show }) => {
                     name="password"
                     required
                     defaultValue={login.password}
-                    placeholder="Enter your password here"
+                    placeholder="Password"
                 ></Input>
                 </Label>
                 <Label>
-                <Button  className="inputs color" type="submit" value="Submit" onChange={event => setLogin(event.target.value)}>Submit</Button>
+                <Button  className="inputs color" type="submit" value="Submit" onChange={event => setLogin(event.target.value)}>Log in</Button>
                 </Label>
                 <div className="btn">
               <Button  className="inputs" onClick={handleClose}>Close</Button>
