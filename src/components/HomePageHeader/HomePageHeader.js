@@ -22,15 +22,15 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
         </LoginModal>
       <nav>
         <ul className="homePageNav">
-          <li>
+          {/* <li>
             <Link className="list" to="/About">ABOUT US</Link>
-          </li>
+          </li> */}
           <li className="list" onClick={showModal}>
             LOGIN
           </li>
-          <li>
+          {/* <li>
             <Link className="signUp list" to="/SignUp">SIGN UP</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div ><HomePageLogo className="logo"/></div>

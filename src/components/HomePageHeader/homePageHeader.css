@@ -12,7 +12,7 @@
 .homePageNav {
   display: flex;
   /* flex-direction: row; */
-  justify-content: space-around;
+  justify-content: flex-end;
   width: 100vw;
   margin: var(--space-xs);
   margin: 3rem 0;
