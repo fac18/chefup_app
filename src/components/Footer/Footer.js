@@ -4,6 +4,7 @@ import "./Footer.css";
 import { ReactComponent as HomeIcon } from "../../icons/homeIconWhite.svg";
 import { ReactComponent as TeachIcon } from "../../icons/teachIconWhite.svg";
 import { ReactComponent as LearnIcon } from "../../icons/learnIconWhite.svg";
+import { ReactComponent as InfoIcon } from "../../icons/infoIcon.svg"
 // import { ReactComponent as ProfilePageIcon } from "../../icons/penEditIconPrimaryColour.svg";
 // correct ProfilePage icon to be added here
 const Footer = () => {
@@ -21,6 +22,10 @@ const Footer = () => {
           </Link>
         </li>
         <li>
+          <Link to="/about">
+            <InfoIcon />
+          </Link>
+        </li>        <li>
           <Link to="/book">
             <LearnIcon />
           </Link>
