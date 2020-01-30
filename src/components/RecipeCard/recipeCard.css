@@ -37,6 +37,7 @@ article {
 
 .recipes_lesson-details:hover {
   box-shadow: 0px 4px 0px 0px #dc5729;
+  border: 1px solid #dc5729;
 
 }
 
@@ -69,7 +70,7 @@ h1{
   .recipes_lesson-details {
     max-width: inherit;
     width: 100%;
-    }
+  }
 
   .description {
     display: block;

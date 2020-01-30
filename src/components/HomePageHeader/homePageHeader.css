@@ -8,6 +8,7 @@
   padding: 0;
   color: var(--white);
   min-height: 70vh;
+
 }
 
 .homePageNav {
@@ -27,17 +28,20 @@
   background-color: rgba(219, 84, 26, 0.7);
   box-shadow: 0rem 0rem 12rem 14rem rgba(219, 84, 26, 0.7) inset, 0rem 4rem 14rem 4rem rgba(219, 84, 26, 0.7);  
   min-height: 70vh;
+
 }
 
 .tagLine {
   font-style: italic;
   font-weight: 700;
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 nav > ul > li {
   list-style-type: none;
   text-decoration: none;
+  font-size: 1em;
+  /* font-weight: bold; */
 }
 
 .list {
@@ -59,15 +63,26 @@ nav > ul > li {
 }
 
 .logo {
-  height: 20vh;
-  width: 100%;
+  align-self: center;
+  min-height: 20vh;
+  width: 60vw;
+  max-width: 100%;
   object-fit: cover;
+  margin-top: var(--space-xxl);
 }
-
 p {
   margin: 0;
   text-align: center;
-  font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  p {
+    font-size: 1.25em;
+  }
+
+  .list {
+    font-size: 1.25em;
+  }
 }
 
 /* ul, li > a {
