@@ -40,6 +40,11 @@ nav > ul > li {
   border-radius: 0.3rem;
 }
 
+.list:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .signUp {
   font-weight: 900;
   font-size: 1.2rem;

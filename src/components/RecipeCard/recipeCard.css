@@ -69,5 +69,8 @@ a.card-link {
     display: block;
     padding-top: 1rem;
     font-style: italic;
+    background-color: rgba(240, 221, 197, 0.5);
+    padding-bottom: 1rem;
+    border-radius: 1rem;
   }
 }

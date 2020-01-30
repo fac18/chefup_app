@@ -29,7 +29,7 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
             LOGIN
           </li>
           <li>
-            <Link className="signUp" to="/SignUp">SIGN UP</Link>
+            <Link className="signUp list" to="/SignUp">SIGN UP</Link>
           </li>
         </ul>
       </nav>

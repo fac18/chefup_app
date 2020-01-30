@@ -21,7 +21,8 @@ const Button = styled.button`
   width: auto;
   max-width: 100px;
   justify-self: center;
-  pointer
+  cursor: pointer;
+  border-radius: 0.6rem
 `;
 
 const Input = styled.input`
