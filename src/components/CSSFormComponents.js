@@ -22,7 +22,8 @@ const Button = styled.button`
   max-width: 100px;
   justify-self: center;
   cursor: pointer;
-  border-radius: 0.6rem
+  border-radius: 0.6rem;
+  border: 0px;
 `;
 
 const Input = styled.input`
@@ -31,7 +32,7 @@ const Input = styled.input`
   border-radius: 5px;
   border: none;
   margin-top: var(--space-xs) var(--space-xs) var(--space-xs) 0;
-
+  border: 1px solid lightgray;
   padding: var(--space-xs);
   width: 80vw;
   max-width: 400px;
@@ -47,7 +48,7 @@ const Input = styled.input`
 
 const Label = styled.label`
   margin: var(--space-xs);
-  padding-top: var(--space-xs)
+  margin-top: 0.2em;
   font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 600;

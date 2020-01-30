@@ -5,6 +5,13 @@
 }
 
 .image-link {
+    text-align: left;
+    margin-bottom: 2em;
     margin-top: 0;
     font-size: 0.7em;
+    padding: 0;
+}
+
+.label-form {
+    padding-top: 2em;
 }
