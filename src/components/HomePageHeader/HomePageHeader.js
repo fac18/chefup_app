@@ -17,18 +17,8 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
   // </LoginModal>
   // <nav>
   //   <ul className="homePageNav">
-  //     <li>
-  //       <Link className="list" to="/About">
-  //         ABOUT US
-  //       </Link>
-  //     </li>
   //     <li className="list" onClick={showModal}>
   //       LOGIN
-  //     </li>
-  //     <li>
-  //       <Link className="signUp list" to="/SignUp">
-  //         SIGN UP
-  //       </Link>
   //     </li>
   //   </ul>
   // </nav>

@@ -25,7 +25,7 @@
 }
 .wrapper {
   background-color: rgba(219, 84, 26, 0.7);
-  box-shadow: 0rem 0rem 12rem 14rem rgba(219, 84, 26, 0.7) inset, 0rem 4rem 14rem 4rem rgba(219, 84, 26, 0.7);  
+  box-shadow: 0rem 0rem 12rem 14rem rgba(219, 84, 26, 0.7) inset;  
   min-height: 70vh;
   text-align: center;
 }
