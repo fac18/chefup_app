@@ -1,21 +1,31 @@
 .homePageHeader {
-  background-color: var(--primary-app-colour);
+  background: var(--primary-app-colour) url(https://i.imgur.com/zphWVpR.png) center no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0;
   color: var(--white);
-  height: 40vh;
 }
 
 .homePageNav {
   display: flex;
   /* flex-direction: row; */
   justify-content: space-around;
-  width: 90vw;
-  padding: 0;
-  margin: var(--space-xs) var(--space-s) var(--space-xl) var(--space-s);
+  width: 100vw;
+  margin: var(--space-xs);
+  margin: 3rem 0;
+}
+
+.wrapper {
+  background-color: rgba(219, 84, 26, 0.7);
+  box-shadow: 4rem 8rem 8rem 4rem rgba(219, 84, 26, 0.7) inset;  
+}
+
+.tagLine {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 nav > ul > li {
@@ -23,9 +33,33 @@ nav > ul > li {
   text-decoration: none;
 }
 
+.list {
+  font-size: 1.2rem;
+  background-color: var(--primary-app-colour);
+  padding: 0 2rem;
+  border-radius: 0.3rem;
+}
+
+.list:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signUp {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.logo {
+  height: 20vh;
+  width: 100%;
+  object-fit: cover;
+}
+
 p {
   margin: 0;
   text-align: center;
+  font-size: 1rem;
 }
 
 /* ul, li > a {

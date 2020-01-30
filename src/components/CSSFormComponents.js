@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 const Form = styled.form`
-  display: ${props => props.inputDisplay || "grid"};
+  // display: ${props => props.inputDisplay || "grid"};
+  // display: ${props => props.inputDisplay || "flex"};
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 90vw;
+  max-width: 100%;
   margin: var(--space-s);
   padding: var(--space-s);
   /* align-items: center; */
@@ -18,7 +21,8 @@ const Button = styled.button`
   width: auto;
   max-width: 100px;
   justify-self: center;
-  pointer
+  cursor: pointer;
+  border-radius: 0.6rem
 `;
 
 const Input = styled.input`

@@ -1,20 +1,25 @@
 import React from "react";
 import HomePageHeader from "../components/HomePageHeader/HomePageHeader";
+import LoginModal from '../components/LoginModal/LoginModal'
 import RecipeCard from "../components/RecipeCard/RecipeCard";
 import Footer from "../components/Footer/Footer";
 
-const Home = ({ lessonData }) => {
+const Home = ({ lessonData, show, setShow }) => {
   const [searchInput, setSearchInput] = React.useState(undefined);
+  // const [show, setShow] = React.useState(false);
+        
 
   return (
     <div>
-      <body>
+      <div>
         <HomePageHeader
           searchInput={searchInput}
           setSearchInput={setSearchInput}
         />
+        <LoginModal show={show} setShow={setShow}/>
+
         <RecipeCard searchInput={searchInput} lessonData={lessonData} />
-      </body>
+      </div>
       <Footer />
     </div>
   );

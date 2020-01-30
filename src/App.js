@@ -13,12 +13,11 @@ import DisplayLesson from "./pages/DisplayLesson";
 import ProfilePage from "./pages/ProfilePage";
 import Home from "./pages/Home";
 import About from "./pages/AboutPage";
-import Login from "./pages/LoginPage";
+// import Login from "./pages/LoginPage";
 import "typeface-roboto";
 import "typeface-roboto-mono";
 import { getRecipesData } from "./utils/getRecipesData";
 import SignUpPage from "./pages/SignUpPage";
-// import { GlobalStyle } from "./App.style";
 
 function App() {
   const [lessonData, setLessonData] = React.useState(null);
@@ -44,7 +43,6 @@ function App() {
   }, []);
   return (
     <Router>
-      {/* <GlobalStyle /> */}
       <Switch>
         <Route exact path="/" render={() => (<Home lessonData={lessonData} />)} />
         <Route path="/teach" render={() => (<CreateLesson />)} />
@@ -52,7 +50,7 @@ function App() {
         <Route path="/DisplayLesson/:id" render={() => (<DisplayLesson lessonData={lessonData} />)} />
         <Route path="/ProfilePage" render={() => (<ProfilePage />)} />
         <Route path="/About" render={() => (<About />)} />
-        <Route path="/Login" render={() => (<Login />)} />
+        {/* <Route path="/Login" render={() => (<Login />)} /> */}
         <Route path='/SignUp' render={() => (<SignUpPage />)} />
       </Switch>
     </Router>

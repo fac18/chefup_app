@@ -24,7 +24,7 @@ const RecipeCard = ({ searchInput, lessonData }) => {
                 <h2>
                   {lesson.teacher}, {lesson.location}, £{lesson.price}
                 </h2>
-
+                <p className="description">{lesson.description}</p>
                 </a>
               </div>
             </article>
