@@ -9,14 +9,15 @@ const Lesson = ({ result }) => {
     <div>
       {result ? (
         <div className="lessonPage_lesson-details">
-          <H1>{result.title}</H1>
+          <h1>{result.title}</h1>
           <h2>
+            <span>Details: </span>
             {result.teacher}, {result.location}, £{result.price}
           </h2>
-          <p>{result.description}</p>
-          <p>{result.time}</p>
-          <p>{result.duration}</p>
-          <p>{result.ingredients}</p>
+          <p><span>Description: </span>{result.description}</p>
+          <p><span>Time: </span>{result.time}</p>
+          <p><span>Duration: </span>{result.duration}</p>
+          <p><span>Ingredients: </span>{result.ingredients}</p>
           <ImageContainer
             imageUrl={result.image_url}
             alt={result.title}

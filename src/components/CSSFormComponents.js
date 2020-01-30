@@ -18,6 +18,7 @@ const Button = styled.button`
   width: auto;
   max-width: 100px;
   justify-self: center;
+  border-radius: 5px;
   pointer
 `;
 
