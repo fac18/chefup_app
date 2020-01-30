@@ -10,7 +10,7 @@ test("full app rendering/navigating", () => {
   const token = process.env.REACT_APP_TOKEN;
 
   if (token) {
-    const { container, getByText } = render(
+    const { container, getByLabelText } = render(
       <Router history={history}>
         <App />
       </Router>
@@ -19,7 +19,8 @@ test("full app rendering/navigating", () => {
       "logoImageWhite.svg Find a local chef and level up your cooking skills!Welcome to  logoTextBlack.svgLog inClosehomeIconWhite.svgteachIconWhite.svginfoIconWhite.svg"
     );
 
-    fireEvent.click(getByText(/about us/i));
+    // redirect to About Us page
+    fireEvent.click(getByLabelText(/About us button/i));
 
     // check that the content changed to the new page
     expect(container.textContent).toMatch(/about us/i);
