@@ -17,7 +17,7 @@ const LoginModal = ({ handleClose, show }) => {
     }
 
     const showHideClassName = show ? "modal display-block" : "modal display-none";
-    const loggedIn = (login.username === user.username && login.password === user.password)  ? "display-block" : "display-none"
+    const loggedIn = (login.username === user.username && login.password === user.password)  ? "p display-block" : "p display-none"
 
     return (
         <>
