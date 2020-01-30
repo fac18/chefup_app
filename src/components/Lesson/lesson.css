@@ -3,8 +3,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100vh
 }
 
 h1 {
-  color: orange;
+  color: rgb(196, 130, 7);
+  margin-bottom: 1em;
+  background-color: rgb(249, 245, 235);
+  padding: 1em 2em 1em 2em;
+  border-radius: 0.4em;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+.margin-bottom {
+  margin-bottom: 1em;
 }
