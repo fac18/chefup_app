@@ -18,12 +18,18 @@ const Button = styled.button`
   background-color: ${props => props.inputColor || "var(--primary-app-colour)"};
   font-family: Source Sans Pro;
   font-size: 16px;
+  color: white;
   width: auto;
   max-width: 100px;
   justify-self: center;
   cursor: pointer;
   border-radius: 0.6rem;
   border: 0px;
+  margin-bottom: 5em;
+  transition: 0.4 all ease-in-out;
+  &:hover{
+    background-color: brown;
+  }
 `;
 
 const Input = styled.input`

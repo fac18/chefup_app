@@ -168,7 +168,7 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <fieldset>
+      <fieldset className="fieldset">
         <legend>What skill level is this lesson aimed at?</legend>
         <Label htmlFor="beginner">Beginner</Label>
         <input
