@@ -19,6 +19,7 @@
 
 .wrapper {
   background-color: rgba(219, 84, 26, 0.7);
+  box-shadow: 4rem 8rem 8rem 4rem rgba(219, 84, 26, 0.7) inset;  
 }
 
 nav > ul > li {
