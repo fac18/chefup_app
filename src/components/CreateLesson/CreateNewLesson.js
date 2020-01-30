@@ -43,7 +43,7 @@ const CreateNewLesson = () => {
 
   // const [checked, setChecked] = React.useState([]);
   const {
-    photo,
+    dishPhoto,
     dishName,
     teacherName,
     teacherPhoto,
@@ -78,23 +78,26 @@ const CreateNewLesson = () => {
 
   return (
     <Form onSubmit={handleSubmit} className="lesson-form">
-
-      <Label className="label-form" htmlFor="dishPhoto">Add photo</Label>
+      <Label className="label-form" htmlFor="dishPhoto">
+        Add photo
+      </Label>
       <Input
         type="text"
         name="dishPhoto"
         id="dishPhoto"
-        defaultValue={photo}
+        defaultValue={dishPhoto}
         required
         onChange={onChange}
       />
 
       <p className="image-link">
         Photo URLs: please provide a link to a photo (or avatar or other
-        graphical representation of you) that is hosted online. <br/>You can use a
-        service like <A href="https://imgur.com/upload">imgur</A> to upload a
-        picture if needed - make sure you include .jpg at the end of the
-        filename
+        graphical representation of you) that is hosted online. <br />
+        You can use a service like <A href="https://imgur.com/upload">
+          imgur
+        </A>{" "}
+        to upload a picture if needed - make sure you include .jpg at the end of
+        the filename
       </p>
       <Label htmlFor="dishPhoto">Add photo of your dish</Label>
       <Input
@@ -117,7 +120,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label className="label-form" htmlFor="dishName">What's the name of your dish?</Label>
+      <Label className="label-form" htmlFor="dishName">
+        What's the name of your dish?
+      </Label>
       <Input
         type="text"
         name="dishName"
@@ -127,7 +132,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label className="label-form" htmlFor="teacher">What is your name?</Label>
+      <Label className="label-form" htmlFor="teacher">
+        What is your name?
+      </Label>
       <Input
         type="text"
         name="teacherName"
@@ -137,7 +144,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label className="label-form" htmlFor="lessonLength">Lesson Length</Label>
+      <Label className="label-form" htmlFor="lessonLength">
+        Lesson Length
+      </Label>
       <Input
         type="text"
         name="lessonLength"
@@ -159,7 +168,6 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-
       <Label htmlFor="lessonHours"></Label>
       <Input
         type="time"
@@ -170,8 +178,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-
-      <Label className="label-form" htmlFor="location">Location</Label>
+      <Label className="label-form" htmlFor="location">
+        Location
+      </Label>
       <Input
         type="text"
         name="location"
@@ -231,7 +240,9 @@ const CreateNewLesson = () => {
         required
         onChange={onChange}
       />
-      <Label className="label-form" htmlFor="description">Description:</Label>
+      <Label className="label-form" htmlFor="description">
+        Description:
+      </Label>
       <Input
         type="textarea"
         name="description"
