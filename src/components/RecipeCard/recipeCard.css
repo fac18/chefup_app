@@ -53,6 +53,15 @@ article {
 a.card-link {
   color: black;
 }
+.explore {
+  text-align: start;
+  font-weight: 500;
+  padding: 2rem 0;
+}
+h1{
+  font-weight: normal;
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 840px) {
   .recipes_recipeCard {
@@ -73,4 +82,5 @@ a.card-link {
     padding-bottom: 1rem;
     border-radius: 1rem;
   }
+
 }

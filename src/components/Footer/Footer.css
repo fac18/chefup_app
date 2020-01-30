@@ -5,7 +5,7 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: var(--secondary-app-colour);
+    background-color: var(--primary-app-colour);
     list-style: none;
     padding: 1rem 0;
 }

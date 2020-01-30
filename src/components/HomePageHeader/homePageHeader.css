@@ -1,5 +1,6 @@
 .homePageHeader {
   background: var(--primary-app-colour) url(https://i.imgur.com/zphWVpR.png) center no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
