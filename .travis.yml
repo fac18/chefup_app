@@ -7,4 +7,4 @@ cache:
 script:
   - npm run coverage
 env:
-  - REACT_APP_TOKEN
+  - API_KEY=REACT_APP_TOKEN
