@@ -65,8 +65,8 @@ h1{
 
 @media screen and (min-width: 840px) {
   .recipes_recipeCard {
-    min-width: 45%;
-    width: 40%;
+    min-width: 30%;
+    width: 400px;
   }
 
   .recipes_lesson-details {
@@ -82,5 +82,4 @@ h1{
     padding-bottom: 1rem;
     border-radius: 1rem;
   }
-
 }
