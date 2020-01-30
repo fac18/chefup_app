@@ -8,13 +8,13 @@ import { A } from "../../App.style.js";
 
 const initialState = {
   photo: "",
+  teacherPhoto: "",
   dishName: "",
   lessonLength: "",
   lessonDates: "",
   lessonHours: "",
   location: "",
   distanceToTravel: "",
-  // skillLevel: "",
   ingredients: "",
   description: ""
   // dietaryOptions: []
@@ -42,9 +42,9 @@ const CreateNewLesson = () => {
 
   // const [checked, setChecked] = React.useState([]);
   const {
-    photo,
+    dishPhoto,
     dishName,
-    teacher,
+    teacherPhoto,
     lessonLength,
     lessonDates,
     lessonHours,
@@ -76,15 +76,6 @@ const CreateNewLesson = () => {
 
   return (
     <Form onSubmit={handleSubmit} className="lesson-form">
-      <Label htmlFor="dishPhoto">Add photo</Label>
-      <Input
-        type="text"
-        name="dishPhoto"
-        id="dishPhoto"
-        defaultValue={photo}
-        required
-        onChange={onChange}
-      />
       <p className="image-link">
         Photo URLs: please provide a link to a photo (or avatar or other
         graphical representation of you) that is hosted online. You can use a
@@ -92,6 +83,26 @@ const CreateNewLesson = () => {
         picture if needed - make sure you include .jpg at the end of the
         filename
       </p>
+      <Label htmlFor="dishPhoto">Add photo of your dish</Label>
+      <Input
+        type="text"
+        name="dishPhoto"
+        id="dishPhoto"
+        defaultValue={dishPhoto}
+        required
+        onChange={onChange}
+      />
+      <Label htmlFor="teacherPhoto">
+        Add photo of yourself so your students know more about you
+      </Label>
+      <Input
+        type="text"
+        name="teacherPhoto"
+        id="teacherPhoto"
+        defaultValue={teacherPhoto}
+        required
+        onChange={onChange}
+      />
 
       <Label htmlFor="dishName">What's the name of your dish?</Label>
       <Input
