@@ -10,10 +10,6 @@ const RecipeCard = ({ searchInput, lessonData }) => {
   } 
   return (
     <section className="recipes">
-      <p className="explore">
-      <h1>Explore recipes</h1>
-      Need some help deciding what dish to learn? Check out the latest dishes added to the site below or use the search bar above to filter by keyword.
-      </p>
       <br />
       {lessonData && searchInput
         ? filterByInput(searchInput, lessonData).map(lesson => (

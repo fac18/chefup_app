@@ -1,7 +1,6 @@
 import React from "react";
 import "./homePageHeader.css";
 import { ReactComponent as HomePageLogo } from "../../icons/logoImageWhite.svg";
-import { Link } from "react-router-dom";
 import Search from "../Search/Search";
 import LoginModal from '../LoginModal/LoginModal'
 
@@ -35,7 +34,12 @@ const HomePageHeader = ({ searchInput, setSearchInput }) => {
       </nav>
       <div ><HomePageLogo className="logo"/></div>
       <p className="tagLine"> Find a local chef and level up your cooking skills!</p>
+      
       <Search searchInput={searchInput} setSearchInput={setSearchInput} />
+      <p className="explore">
+      <h1>Explore recipes</h1>
+      Need some help deciding what dish to learn? <br />Check out the latest dishes added to the site below,<br/> or use the search bar above to filter by keyword.
+      </p>
       </div>
     </div>
   );
