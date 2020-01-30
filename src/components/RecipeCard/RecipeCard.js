@@ -10,7 +10,8 @@ const RecipeCard = ({ searchInput, lessonData }) => {
   } 
   return (
     <section className="recipes">
-      {lessonData
+      <br />
+      {lessonData && searchInput
         ? filterByInput(searchInput, lessonData).map(lesson => (
             <article data-testid={lesson.id} className="recipes_recipeCard">
               <div className="recipes_lesson-details">

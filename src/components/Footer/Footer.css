@@ -1,12 +1,13 @@
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--secondary-app-colour);
-  list-style: none;
-  padding: 1rem 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(222, 86, 28);
+    box-shadow: 0rem 0.1rem 0.3rem 0.6rem rgba(222, 86, 28);
+    align-items: center;
+    list-style: none;
+    padding: 1rem 0;
 }
