@@ -78,12 +78,26 @@ const CreateNewLesson = () => {
 
   return (
     <Form onSubmit={handleSubmit} className="lesson-form">
+      <Label className="label-form" htmlFor="dishPhoto">
+        Add photo
+      </Label>
+      <Input
+        type="text"
+        name="dishPhoto"
+        id="dishPhoto"
+        defaultValue={dishPhoto}
+        required
+        onChange={onChange}
+      />
+
       <p className="image-link">
         Photo URLs: please provide a link to a photo (or avatar or other
-        graphical representation of you) that is hosted online. You can use a
-        service like <A href="https://imgur.com/upload">imgur</A> to upload a
-        picture if needed - make sure you include .jpg at the end of the
-        filename
+        graphical representation of you) that is hosted online. <br />
+        You can use a service like <A href="https://imgur.com/upload">
+          imgur
+        </A>{" "}
+        to upload a picture if needed - make sure you include .jpg at the end of
+        the filename
       </p>
       <Label htmlFor="dishPhoto">Add photo of your dish</Label>
       <Input
@@ -106,7 +120,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="dishName">What's the name of your dish?</Label>
+      <Label className="label-form" htmlFor="dishName">
+        What's the name of your dish?
+      </Label>
       <Input
         type="text"
         name="dishName"
@@ -116,7 +132,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="teacherName">What is your name?</Label>
+      <Label className="label-form" htmlFor="teacher">
+        What is your name?
+      </Label>
       <Input
         type="text"
         name="teacherName"
@@ -126,7 +144,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="lessonLength">Lesson Length</Label>
+      <Label className="label-form" htmlFor="lessonLength">
+        Lesson Length
+      </Label>
       <Input
         type="text"
         name="lessonLength"
@@ -136,7 +156,7 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="lessonDates">
+      <Label className="label-form" htmlFor="lessonDates">
         Select the date and time you are available to teach:
       </Label>
       <Input
@@ -158,7 +178,9 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="location">Location</Label>
+      <Label className="label-form" htmlFor="location">
+        Location
+      </Label>
       <Input
         type="text"
         name="location"
@@ -168,7 +190,7 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="distanceToTravel">
+      <Label className="label-form" htmlFor="distanceToTravel">
         What distance are you willing to travel?
       </Label>
       <Input
@@ -180,7 +202,7 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <fieldset>
+      <fieldset className="fieldset">
         <legend>What skill level is this lesson aimed at?</legend>
         <Label htmlFor="beginner">Beginner</Label>
         <input
@@ -210,7 +232,7 @@ const CreateNewLesson = () => {
         />
       </fieldset>
 
-      <Label>Ingredients:</Label>
+      <Label className="label-form">Ingredients:</Label>
       <Input
         type="textarea"
         name="ingredients"
@@ -218,7 +240,9 @@ const CreateNewLesson = () => {
         required
         onChange={onChange}
       />
-      <Label htmlFor="description">Description:</Label>
+      <Label className="label-form" htmlFor="description">
+        Description:
+      </Label>
       <Input
         type="textarea"
         name="description"
