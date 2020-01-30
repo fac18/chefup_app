@@ -7,17 +7,18 @@ import { A } from "../../App.style.js";
 //https://medium.com/javascript-in-plain-english/react-controlled-forms-with-hooks-538762aab935
 
 const initialState = {
-  photo: "",
+  dishPhoto: "",
   teacherPhoto: "",
   dishName: "",
+  teacherName: "",
   lessonLength: "",
   lessonDates: "",
   lessonHours: "",
   location: "",
   distanceToTravel: "",
+  // skillLevel,
   ingredients: "",
   description: ""
-  // dietaryOptions: []
 };
 
 function reducer(state, { field, value }) {
@@ -44,6 +45,7 @@ const CreateNewLesson = () => {
   const {
     dishPhoto,
     dishName,
+    teacherName,
     teacherPhoto,
     lessonLength,
     lessonDates,
@@ -114,12 +116,12 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="teacher">What is your name?</Label>
+      <Label htmlFor="teacherName">What is your name?</Label>
       <Input
         type="text"
-        name="teacher"
-        id="teacher"
-        defaultValue={teacher}
+        name="teacherName"
+        id="teacherName"
+        defaultValue={teacherName}
         required
         onChange={onChange}
       />
@@ -146,16 +148,15 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label htmlFor="lessonHours">
-        <Input
-          type="time"
-          name="lessonHours"
-          id="lessonHours"
-          defaultValue={lessonHours}
-          required
-          onChange={onChange}
-        />
-      </Label>
+      <Label htmlFor="lessonHours"></Label>
+      <Input
+        type="time"
+        name="lessonHours"
+        id="lessonHours"
+        defaultValue={lessonHours}
+        required
+        onChange={onChange}
+      />
 
       <Label htmlFor="location">Location</Label>
       <Input
@@ -190,12 +191,12 @@ const CreateNewLesson = () => {
           onChange={onChange}
         />
 
-        <Label htmlFor="intermediate">Intermediate</Label>
+        <Label htmlFor="improver">Improver</Label>
         <input
           type="radio"
           name="skillLevel"
-          id="intermediate"
-          defaultValue="intermediate"
+          id="improver"
+          defaultValue="improver"
           onChange={onChange}
         />
 
