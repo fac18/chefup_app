@@ -38,7 +38,7 @@ const LoginModal = ({ handleClose, show }) => {
                     name="username"
                     required
                     defaultValue={login.username}
-                    placeholder="'Username"
+                    placeholder="Username"
                 ></Input>
                 </Label>
                 <Label>

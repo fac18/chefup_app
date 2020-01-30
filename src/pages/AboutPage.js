@@ -12,8 +12,8 @@ const AboutPage = () => {
         <div className="bkg" >
             <Header />
                 <div className="container">
-                    <h3 className="aboutus-header">All about us</h3>
-                    <p className="introductory-paragraph" >Like the smell of what your neighbours are cooking? Why not invite them around to teach you how to cook!<br />Don't know your bake from your broil or your saute from your steam? Learn how to cook authentically with a local chef that shows you what the recipes do not.<br/>Chef Up is a way to level up your cooking skills like never before. Learn new home cooking styles in your own home. Be ready to impress your friends, eat healthier and save money in the long run.</p>
+                    <h3 className="aboutus-header">About us</h3>
+                    <p className="introductory-paragraph" >Like the smell of what your neighbours are cooking? Why not invite them around to teach you how to cook!<br />Don't know your bake from your broil or your saute from your steam?<br /> Learn how to cook authentically with a local chef that shows you what the recipes do not.<br/>Chef Up is a way to level up your cooking skills like never before. Learn new home cooking styles in your own home.<br /> Be ready to impress your friends, eat healthier and save money in the long run.</p>
                     <h3>How it works</h3>
                     <Diamond1 />
                     <p className="diamond-paragraph">Student finds a recipe they would like to learn.</p>
