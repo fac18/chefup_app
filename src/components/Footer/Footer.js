@@ -12,17 +12,17 @@ const Footer = () => {
     <footer>
       <ul className="footer">
         <li>
-          <Link to="/">
+          <Link aria-label="Home button" to="/">
             <HomeIcon />
           </Link>
         </li>
         <li>
-          <Link to="/teach">
+          <Link aria-label="Teach button" to="/teach">
             <TeachIcon />
           </Link>
         </li>
         <li>
-          <Link to="/about">
+          <Link aria-label="About us button" to="/about">
             <InfoIcon />
           </Link>
         </li>
