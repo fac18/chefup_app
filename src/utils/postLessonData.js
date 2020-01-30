@@ -10,6 +10,7 @@ Airtable.configure({
 const postLessonData = ({
   photo,
   dishName,
+  teacher,
   lessonLength,
   lessonDates,
   lessonHours,
@@ -29,7 +30,7 @@ const postLessonData = ({
         lesson_name: dishName,
         chef_image:
           "https://airtable.com/tbl5vlOrQjCPQ5Wrl/viwbNivzUaYOsHqfU/recZurudDogIPnylo",
-        teacher: "test",
+        teacher: teacher,
         location: location,
         price: 25,
         ingredients: ingredients,

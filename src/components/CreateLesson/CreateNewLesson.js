@@ -44,6 +44,7 @@ const CreateNewLesson = () => {
   const {
     photo,
     dishName,
+    teacher,
     lessonLength,
     lessonDates,
     lessonHours,
@@ -98,6 +99,16 @@ const CreateNewLesson = () => {
         name="dishName"
         id="dishName"
         defaultValue={dishName}
+        required
+        onChange={onChange}
+      />
+
+      <Label htmlFor="teacher">What is your name?</Label>
+      <Input
+        type="text"
+        name="teacher"
+        id="teacher"
+        defaultValue={teacher}
         required
         onChange={onChange}
       />
