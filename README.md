@@ -197,10 +197,35 @@ Our second build sprint is more aimed at post requests to our database and authe
 
 ### Things we've learnt
 
-- wesbos esLint is not so easy to set up with create-react-app
-- a getRequest from AirTable reads empty rows as null and receives undefined when making a getRequest
-- .includes() is cAsE sEnsItiVe
-- tricky to work remotely - duplication of work occurs
+DESIGN
+Rapid prototyping
+User research
+User testing, using Figma to build a prototype
+
+INFRASTRUCTURE
+Wesbos esLint is not so easy to set up with create-react-app
+
+DEBUGGING 
+A getRequest from AirTable reads empty rows as null and receives undefined when making a getRequest
+.includes() is cAsE sEnsItiVe
+Sending of states
+
+REACT
+React Router
+React Render
+React useReducer
+Styled components
+
+TESTING
+Testing with React Router
+snapshots
+jest
+Travis CI
+
+AGILE
+Tricky to work remotely - duplication of work occurs
+Communication is key
+Velocity can be hard to get right
 
 ---
 
@@ -219,3 +244,4 @@ Our second build sprint is more aimed at post requests to our database and authe
 - React
 - Netlify
 - AirTable
+
