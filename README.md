@@ -1,5 +1,4 @@
-# ChefUp [![Build Status](https://travis-ci.com/fac18/chefup_app.svg?branch=master)](https://travis-ci.com/fac18/chefup_app)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b2f24d88-18ae-4421-bc71-70c320dba9ab/deploy-status)](https://app.netlify.com/sites/chefup/deploys)
+# ChefUp [![Build Status](https://travis-ci.com/fac18/chefup_app.svg?branch=master)](https://travis-ci.com/fac18/chefup_app) [![Netlify Status](https://api.netlify.com/api/v1/badges/b2f24d88-18ae-4421-bc71-70c320dba9ab/deploy-status)](https://app.netlify.com/sites/chefup/deploys)
 
 
 A cooking app to match people who want to learn new home cooking styles, by finding a local chef to teach them how to cook authentic home made meals.
