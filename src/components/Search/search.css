@@ -1,12 +1,14 @@
-#searchForm {
+.searchForm {
   display: flex;
-  justify-content: column;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
 }
 
 #search {
   padding: var(--space-s);
   margin-bottom: 30px;
-  border-radius: 5px;
+  border-radius: 1rem;
   border: none;
   /* width: 250px; */
 }
@@ -18,7 +20,7 @@
 } */
 
 .searchIcon {
-  margin-left: 20px;
+  padding: var(--space-s);
 }
 
 /* button {

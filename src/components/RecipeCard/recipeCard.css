@@ -12,6 +12,14 @@ article {
   margin: var(--space-s);
 }
 
+.description {
+  display: none;
+}
+
+.recipes {
+  padding-bottom: 15%;
+}
+
 .recipes_lesson-details {
   border-radius: 10px;
   box-sizing: content-box;
@@ -27,6 +35,7 @@ article {
 
 .recipes_lesson-details:hover {
   box-shadow: 0px 4px 0px 0px #dc5729;
+  border: 1px solid #dc5729;
 
 }
 
@@ -44,4 +53,25 @@ article {
 
 a.card-link {
   color: black;
+}
+
+@media screen and (min-width: 840px) {
+  .recipes_recipeCard {
+    min-width: 30%;
+    width: 400px;
+  }
+
+  .recipes_lesson-details {
+    max-width: inherit;
+    width: 100%;
+  }
+
+  .description {
+    display: block;
+    padding-top: 1rem;
+    font-style: italic;
+    background-color: rgba(240, 221, 197, 0.5);
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+  }
 }

@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import { useParams } from "react-router-dom";
 import BookLessonForm from "../components/BookLessonForm/BookLessonForm";
+import './pages_css/aboutpage.css';
 
 const DisplayRecipe = ({ lessonData }) => {
   let { id } = useParams();
@@ -16,10 +17,12 @@ const DisplayRecipe = ({ lessonData }) => {
   });
 
   return (
-    <div>
+    <div className="bkg">
       <Header />
+      <div className="container">
       <Lesson result={result[0]} />
       <BookLessonForm />
+      </div>
       <Footer />
     </div>
   );

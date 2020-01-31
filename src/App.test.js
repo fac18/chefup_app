@@ -7,15 +7,22 @@ import "@testing-library/jest-dom/extend-expect";
 
 test("full app rendering/navigating", () => {
   const history = createMemoryHistory();
-  const { container, getByText } = render(
-    <Router history={history}>
-      <App />
-    </Router>
-  );
-  expect(container.textContent).toMatch("About us");
+  const token = process.env.REACT_APP_TOKEN;
 
-  fireEvent.click(getByText(/about us/i));
+  if (token) {
+    const { container, getByLabelText } = render(
+      <Router history={history}>
+        <App />
+      </Router>
+    );
+    expect(container.textContent).toBe(
+      "logoImageWhite.svg Find a local chef and level up your cooking skills!Welcome to  logoTextBlack.svgLog inClosehomeIconWhite.svgteachIconWhite.svginfoIconWhite.svg"
+    );
 
-  // check that the content changed to the new page
-  expect(container.textContent).toMatch(/about us/i);
+    // redirect to About Us page
+    fireEvent.click(getByLabelText(/About us button/i));
+
+    // check that the content changed to the new page
+    expect(container.textContent).toMatch(/about us/i);
+  }
 });

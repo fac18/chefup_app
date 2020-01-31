@@ -1,10 +1,22 @@
 .lesson-form {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
 }
 
 .image-link {
+    text-align: left;
     margin-top: 0;
     font-size: 0.7em;
+    padding: 0;
+    max-width: 400px;
+}
+
+.label-form {
+    padding-top: 2em;
+}
+
+.fieldset {
+    margin-top: 2em;
+    max-width: 400px;
 }

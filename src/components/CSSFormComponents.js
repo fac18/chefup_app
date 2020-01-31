@@ -1,9 +1,12 @@
 import styled from "styled-components";
 
 const Form = styled.form`
-  display: ${props => props.inputDisplay || "grid"};
+  // display: ${props => props.inputDisplay || "grid"};
+  // display: ${props => props.inputDisplay || "flex"};
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  max-width: 90vw;
+  max-width: 100%;
   margin: var(--space-s);
   padding: var(--space-s);
   /* align-items: center; */
@@ -15,11 +18,18 @@ const Button = styled.button`
   background-color: ${props => props.inputColor || "var(--primary-app-colour)"};
   font-family: Source Sans Pro;
   font-size: 16px;
+  color: white;
   width: auto;
   max-width: 100px;
   justify-self: center;
-  border-radius: 5px;
-  pointer
+  cursor: pointer;
+  border-radius: 0.6rem;
+  border: 0px;
+  margin-bottom: 5em;
+  transition: 0.4 all ease-in-out;
+  &:hover {
+    background-color: brown;
+  }
 `;
 
 const Input = styled.input`
@@ -28,7 +38,7 @@ const Input = styled.input`
   border-radius: 5px;
   border: none;
   margin-top: var(--space-xs) var(--space-xs) var(--space-xs) 0;
-
+  border: 1px solid lightgray;
   padding: var(--space-xs);
   width: 80vw;
   max-width: 400px;
@@ -44,7 +54,7 @@ const Input = styled.input`
 
 const Label = styled.label`
   margin: var(--space-xs);
-  padding-top: var(--space-xs)
+  margin-top: 0.2em;
   font-family: Source Sans Pro;
   font-size: 16px;
   font-weight: 600;

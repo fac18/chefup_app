@@ -8,8 +8,11 @@ Airtable.configure({
 });
 
 const postLessonData = ({
-  photo,
+  dishPhoto,
+  teacherPhoto,
   dishName,
+  teacherName,
+  price,
   lessonLength,
   lessonDates,
   lessonHours,
@@ -25,11 +28,8 @@ const postLessonData = ({
   base("Table 1").create([
     {
       fields: {
-        // lesson_id: "1",
         lesson_name: dishName,
-        chef_image:
-          "https://airtable.com/tbl5vlOrQjCPQ5Wrl/viwbNivzUaYOsHqfU/recZurudDogIPnylo",
-        teacher: "test",
+        teacher: teacherName,
         location: location,
         price: 25,
         ingredients: ingredients,
@@ -43,14 +43,12 @@ const postLessonData = ({
         Tags: dietaryOptions,
         main_recipe_image: [
           {
-            url:
-              "https://dl.airtable.com/.attachments/bf5cbb29de451c0b64fb24dffd554dba/e5dd3ff2/image11.png"
+            url: dishPhoto
           }
         ],
         chef_image: [
           {
-            url:
-              "https://dl.airtable.com/.attachments/8a66297eab915671c3e5c57f627897b4/d0b5674c/Profile-photo1.png"
+            url: teacherPhoto
           }
         ],
         additional_recipe_images: [
