@@ -199,6 +199,17 @@ Our second build sprint is more aimed at post requests to our database and authe
 - wesbos esLint is not so easy to set up with create-react-app
 - a getRequest from AirTable reads empty rows as null and receives undefined when making a getRequest
 - .includes() is cAsE sEnsItiVe
+- tricky to work remotely - duplication of work occurs
+
+---
+
+### Ways to make Daily stand ups more interesting
+
+- read out each others horoscopes
+- share something from your bucket list 
+- give someone in the team a compliment
+- tell a joke 
+- breakfast croissants
 
 ---
 
