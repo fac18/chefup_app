@@ -4,11 +4,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh
+  height: 100vh;
 }
 
 h1 {
-  color: rgb(196, 130, 7);
+  color: var(--black);
   margin-bottom: 1em;
   background-color: rgb(249, 245, 235);
   padding: 1em 2em 1em 2em;
