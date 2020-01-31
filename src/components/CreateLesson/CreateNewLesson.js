@@ -132,7 +132,7 @@ const CreateNewLesson = () => {
         onChange={onChange}
       />
 
-      <Label className="label-form" htmlFor="teacher">
+      <Label className="label-form" htmlFor="teacherName">
         What is your name?
       </Label>
       <Input
@@ -173,6 +173,7 @@ const CreateNewLesson = () => {
         type="time"
         name="lessonHours"
         id="lessonHours"
+        aria-label="Enter lesson hours"
         defaultValue={lessonHours}
         required
         onChange={onChange}
@@ -232,11 +233,14 @@ const CreateNewLesson = () => {
         />
       </fieldset>
 
-      <Label className="label-form">Ingredients:</Label>
+      <Label className="label-form" htmlFor="ingredients">
+        Ingredients:
+      </Label>
       <Input
         type="textarea"
         name="ingredients"
         defaultValue={ingredients}
+        aria-label="enter ingredients"
         required
         onChange={onChange}
       />

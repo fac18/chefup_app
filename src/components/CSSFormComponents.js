@@ -17,7 +17,8 @@ const Button = styled.button`
   padding: ${props => props.inputPadding || "var(--space-m)"};
   background-color: ${props => props.inputColor || "var(--primary-app-colour)"};
   font-family: Source Sans Pro;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   color: white;
   width: auto;
   max-width: 100px;
