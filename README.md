@@ -245,3 +245,6 @@ Velocity can be hard to get right
 - Netlify
 - AirTable
 
+---
+
+[See our presentation here](https://www.canva.com/design/DADyegJq70M/ZNKxRPejDGm1omovYMgJxQ/edit)
