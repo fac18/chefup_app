@@ -14,6 +14,7 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
         name="search"
         required
         value={searchInput}
+        aria-label="search bar"
         placeholder="&#x1F50D; Search by your favourite cuisine..."
         onChange={event => setSearchInput(event.target.value)}
       ></Input>
@@ -23,7 +24,6 @@ const SearchBar = ({ searchInput, setSearchInput }) => {
         inputColor="var(--secondary-app-colour)"
         inputPadding="0"
       > */}
-
       {/* </Button> */}
     </Form>
   );
