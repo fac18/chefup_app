@@ -27,7 +27,7 @@ const Button = styled.button`
   border: 0px;
   margin-bottom: 5em;
   transition: 0.4 all ease-in-out;
-  &:hover{
+  &:hover {
     background-color: brown;
   }
 `;

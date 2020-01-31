@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Label, Input } from "../CSSFormComponents.js";
+import { Form, Label, Input, Button } from "../CSSFormComponents.js";
 // import { Link } from 'react-router-dom';
 
 const BookLessonForm = () => {
@@ -29,6 +29,7 @@ const BookLessonForm = () => {
         <Input type="checkbox" required></Input>
         <Label>You may enter a message to your chosen teacher here:</Label>
         <Input type="textarea" height="200px" />
+        <Button>Get in touch</Button>
       </Form>
     );
   }
