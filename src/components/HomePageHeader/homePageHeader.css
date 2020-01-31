@@ -1,27 +1,33 @@
 .homePageHeader {
-  background: var(--primary-app-colour) url(https://i.imgur.com/zphWVpR.png)
-    center no-repeat;
-
-  /* padding: 0; */
+  background: var(--primary-app-colour) url(https://i.imgur.com/zphWVpR.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
   color: var(--white);
-  width: 100vw;
+  min-height: 70vh;
 }
 
 .homePageNav {
   display: flex;
   /* flex-direction: row; */
-  justify-content: space-between;
-  margin: var(--space-m);
-  /* margin: 3rem 0; */
+  justify-content: flex-end;
+  width: 100vw;
+  margin: var(--space-xs);
+  margin: 3rem 0;
 }
-
+.explore {
+  /* text-align: ; */
+  font-weight: 500;
+  padding: 0 auto 5rem auto;
+}
 .wrapper {
   background-color: rgba(219, 84, 26, 0.7);
-  box-shadow: 4rem 8rem 8rem 4rem rgba(219, 84, 26, 0.7) inset;
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
-  flex-direction: column;
+  box-shadow: 0rem 0rem 12rem 14rem rgba(219, 84, 26, 0.7) inset;  
+  min-height: 70vh;
+  text-align: center;
 }
 
 .tagLine {
@@ -38,10 +44,11 @@ nav > ul > li {
 }
 
 .list {
-  /* font-size: 1.2rem; */
-  background-color: var(--primary-app-colour);
-  /* padding: 0 2rem; */
-  border-radius: 0.3rem;
+  font-size: 1.2rem;
+  background-color: #db411b;
+  padding: 0.4rem 2rem;
+  margin-right: 7rem ;
+  border-radius: 0.4rem;
 }
 
 .list:hover {

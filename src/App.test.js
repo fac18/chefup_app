@@ -16,7 +16,7 @@ test("full app rendering/navigating", () => {
       </Router>
     );
     expect(container.textContent).toBe(
-      "logoImageWhite.svg Find a local chef and level up your cooking skills!Welcome to  logoTextBlack.svgLog inClosehomeIconWhite.svgteachIconWhite.svginfoIconWhite.svg"
+      "Welcome back Welcome to  logoTextBlack.svgLog inCloseLOGINlogoImageWhite.svg Find a local chef and level up your cooking skills!Explore recipesNeed some help deciding what dish to learn? Check out the latest dishes added to the site below, or use the search bar above to filter by keyword.Welcome back Welcome to  logoTextBlack.svgLog inClosehomeIconWhite.svgteachIconWhite.svginfoIconWhite.svg"
     );
 
     // redirect to About Us page

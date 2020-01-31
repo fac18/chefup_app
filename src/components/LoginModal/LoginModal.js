@@ -11,13 +11,20 @@ const LoginModal = ({ handleClose, show }) => {
         password: ""
     });
 
+    const user = {
+      username: "student",
+      password: "chefUp"
+    }
+
     const showHideClassName = show ? "modal display-block" : "modal display-none";
+    const loggedIn = (login.username === user.username && login.password === user.password)  ? "p display-block" : "p display-none"
 
     return (
         <>
         {/* <Button variant="primary" onClick={handleShow}>
           Launch demo modal
         </Button> */}
+<p className={loggedIn}>Welcome back {login.username}</p>
       <div className={showHideClassName}>
           <section className="modal-main">
           <div>
@@ -31,7 +38,7 @@ const LoginModal = ({ handleClose, show }) => {
                     name="username"
                     required
                     defaultValue={login.username}
-                    placeholder="'Username"
+                    placeholder="Username"
                 ></Input>
                 </Label>
                 <Label>

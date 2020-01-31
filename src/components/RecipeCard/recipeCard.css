@@ -18,6 +18,8 @@ article {
 
 .recipes {
   padding-bottom: 15%;
+  /* background-image: linear-gradient(to bottom, rgba(218, 104, 38,0.3), rgba(253, 168, 49, 0.3), whitesmoke); */
+
 }
 
 .recipes_lesson-details {
@@ -53,6 +55,10 @@ article {
 
 a.card-link {
   color: black;
+}
+
+h1{
+  font-weight: bold;
 }
 
 @media screen and (min-width: 840px) {
